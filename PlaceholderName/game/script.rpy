@@ -8,6 +8,21 @@ define scarecrow = Character("Scarecrow", color="#9999ff")
 define tinman = Character("Tin Man", color="#99cc00")
 define lion = Character("Lion", color="#ffcc00")
 
+# placeholder character portraits
+image ScarecrowPlaceholder = Placeholder("boy")
+image dorothyPlaceholder = Placeholder("girl")
+image lionPlaceholder = Placeholder("boy")
+
+# chapter 3
+image bartenderPlaceholder = Placeholder("boy")
+
+# placeholder bg
+
+# chapter 3
+image randomStreet = Placeholder("bg")
+image outsideMunchkinBar = Placeholder("bg")
+image insideMunchkinBar = Placeholder("bg")
+
 # The game starts here.
 
 label start:

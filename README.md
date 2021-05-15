@@ -1,5 +1,9 @@
 ## A visual novel created for ICS 166
 #### Made with Renpy
 Contributers:
-- person1
-- person2
+- Esmeralda Juarez
+- Codey Huntting
+- Kenneth Lin
+- Logan Mikulski
+- William Nguyen
+- Anna Salieva
