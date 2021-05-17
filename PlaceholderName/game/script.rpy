@@ -20,13 +20,14 @@ image wwWestPlaceholder = Placeholder("girl")
 image MaleStranger = Placeholder("boy")
 image FemaleStranger = Placeholder("girl")
 
+image policeStation = Placeholder("bg")
 
+#image black = "#0000" # literally a black screen, what else do you want
 image randomStreet = Placeholder("bg")
 image policeQuestioningRoom = Placeholder("bg")
 
 # chapter 1
 image crimeScene = Placeholder("bg")
-
 image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
 
 

@@ -63,10 +63,10 @@ label chapter04A:
 
 menu chapter04AChoice:
 
-    "Yea okay fine why don't we go make friends with our fellow criminal then?"
+    "Yea okay fine why don't we go make friends with our fellow criminal then?":
         jump chapter04AA
 
-    "Whatever lets get him out of here."
+    "Whatever lets get him out of here.":
         jump chapter04B
 
 
@@ -142,10 +142,10 @@ label chapter04AA:
 
 menu chapter04AAChoice:
 
-    "Do you write your name on them?"
+    "Do you write your name on them?":
         jump chapter04AAA
 
-    "Do you mail them to her from the police station?"
+    "Do you mail them to her from the police station?":
         jump chapter04AAA
 
 label chapter04AAA:
@@ -188,12 +188,12 @@ label chapter04AAA:
 
     "Scarecrow darts upstairs."
 
-menu chapter04AABChoice
+menu chapter04AABChoice:
 
-    "Go eavesdrop on Tin Man and W. W. West's conversation."
+    "Go eavesdrop on Tin Man and W. W. West's conversation.":
         jump chapter04AAB
 
-    "Stay where you are and play it safe."
+    "Stay where you are and play it safe.":
         jump chapter04AAC
 
 label chapter04AAB:
@@ -214,7 +214,7 @@ label chapter04AAB:
 
     jump chapter04AAC 
 
-label chapter04AAC
+label chapter04AAC:
 
     scarecrow "{i}Heard from the second story{/i} {b}FOUND IT!{/b}"
 
@@ -290,13 +290,13 @@ label chapter04B:
 
 menu chapter04BChoice:
 
-    "Oh we were just wondering if you had some sugar!"
+    "Oh we were just wondering if you had some sugar!":
         jump chapter04BB
 
-    "We were just getting that creep off your lawn!"
+    "We were just getting that creep off your lawn!":
         jump chapter04BB
 
-    "We were just wondering if we could look through your house for evidence!"
+    "We were just wondering if we could look through your house for evidence!":
         jump chapter04BB
 
 label chapter04BB:

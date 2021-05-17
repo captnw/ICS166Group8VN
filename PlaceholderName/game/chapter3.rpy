@@ -6,6 +6,8 @@ define bartender = Character("Bartender", color="#bfbfbf")
 
 label chapter03:
 
+    "CHAPTER 3: AT THE BAR"
+
     # street bg here, fade in
     scene randomStreet
     with fade
@@ -288,6 +290,9 @@ label chapter03B:
 
     hide ScarecrowPlaceholder
     hide dorothyPlaceholder
+
+    scene black
+    with dissolve
 
     jump chapter05 # go to chapter 5
 
@@ -579,6 +584,9 @@ label chapter03AB:
     hide ScarecrowPlaceholder
     hide dorothyPlaceholder
 
+    scene black
+    with dissolve
+
     jump chapter05 # go to chapter 5
 
 label chapter03AA:
@@ -778,5 +786,8 @@ label chapter03AAContinued:
 
     hide ScarecrowPlaceholder
     hide dorothyPlaceholder
+
+    scene black
+    with dissolve
 
     jump chapter04 # go to chapter 4

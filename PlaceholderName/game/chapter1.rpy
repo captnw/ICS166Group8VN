@@ -235,4 +235,7 @@ label chp01Choice02Cont:
 
     "The W. W. West sees the blood on the camera."
 
+    scene black
+    with dissolve
+
     jump chapter02
