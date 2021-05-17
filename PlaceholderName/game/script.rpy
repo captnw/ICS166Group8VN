@@ -122,13 +122,13 @@ label start:
 
 menu chapter00Choice:
     
-    "Stop to cheer him up."
+    "Stop to cheer him up.":
         jump chapter00A
 
-    "Yell something encouraging as you skip away."
+    "Yell something encouraging as you skip away.":
         jump chapter00B
     
-    "Move on, he’ll cheer up on his own"
+    "Move on, he’ll cheer up on his own":
         jump chapter00C
 
 label chapter00A:
@@ -141,7 +141,7 @@ label chapter00A:
 
     jump chapter00D
 
-label chapter00B
+label chapter00B:
     
     "You turn your head back to smile at the officers."
 
@@ -151,7 +151,7 @@ label chapter00B
 
     jump chapter00D
 
-label chapter00C
+label chapter00C:
     
     "You keep skipping on your merry way, trying to imagine what the grumpy man might look like if he was more cheerful."
 
@@ -161,7 +161,7 @@ label chapter00C
 
     jump chapter00D
     
-label chapter00D
+label chapter00D:
 
     # scarecrow portrait show 
 

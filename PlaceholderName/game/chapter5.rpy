@@ -134,7 +134,9 @@ label choiceB:
     
     "You both look at each other."
 
-    dorothy + scarecrow "Nah!"
+    dorothy "Nah!"
+    
+    scarecrow "No way!" # dorothy and scarecrow says this together
 
     dorothy "So the mysterious stranger with the scary eyes did it? Helpful."
 
