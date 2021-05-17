@@ -9,6 +9,7 @@ define tinman = Character("Tin Man", color="#99cc00")
 define lion = Character("Lion", color="#ffcc00")
 define wwwest = Character("W. W. West", color="#ffcc00")
 define wiz = Character("The Wiz", color="#ffcc00")
+define janitor = Character("Janitor", color="#ffcc00")
 
 # placeholder character portraits
 image ScarecrowPlaceholder = Placeholder("boy")
@@ -85,22 +86,32 @@ label start:
     #dorothy "...?!"
 
     # outsideBigBen bg
+    show outsideBigBen
 
+    show dorothyPlaceholder at center
     "Your name is Dorothy and you are simply ecstatic to go to Big Ben today to capture more of your favorite photos of London’s charming cityscape!"
 
     # dorothy portrait show
+    
 
     dorothy "Oh, this is the perfect day for taking photos of London! We so rarely get sunny days like this."
 
     "You inhale a huge breath of fresh air and lift your arms all the way over your head so your skin can drink in the warm sun."
 
     "You decide to start waving at someone you have never seen before."
+    show dorothyPlaceholder at right
 
     dorothy "Hi there!"
+    hide dorothyPlaceholder
 
     # lion portrait show
+    show lionPlaceholder at left
 
     janitor "{i}Unreasonably scared{/i} GAAAH! Uhm, hello...?!"
+
+    hide lionPlaceholder
+
+    show dorothyPlaceholder at right
 
     dorothy "Beautiful day, isn’t it?!"
 
@@ -108,17 +119,27 @@ label start:
 
     dorothy "Good day, officers!"
 
+    hide dorothyPlaceholder
+
     # tinman portrait show
+    show tinmanPlaceholder at left
 
     tinman "Good day."
 
+    hide tinmanPlaceholder
     # wiz portrait show 
+    show wizPlaceholder at center
 
     wiz "Good day young lady! Where are you off to?"
+
+    hide wizPlaceholder
+
+    show dorothyPlaceholder at right
 
     dorothy "I’m off to Big Ben, so I can see the whole sky!"
 
     "You notice that the man there next to the investigator looks rather grumpy. What will you do?"
+    show dorothyPlaceholder at center
 
 menu chapter00Choice:
     
@@ -132,6 +153,8 @@ menu chapter00Choice:
         jump chapter00C
 
 label chapter00A:
+
+    show dorothyPlaceholder at right
     
     "You turn around with a twinkle in your eye and start skipping and waving towards the grumpy man."
 
@@ -142,6 +165,7 @@ label chapter00A:
     jump chapter00D
 
 label chapter00B:
+    show dorothyPlaceholder at right
     
     "You turn your head back to smile at the officers."
 
@@ -152,6 +176,7 @@ label chapter00B:
     jump chapter00D
 
 label chapter00C:
+    show dorothyPlaceholder at right
     
     "You keep skipping on your merry way, trying to imagine what the grumpy man might look like if he was more cheerful."
 
@@ -163,10 +188,13 @@ label chapter00C:
     
 label chapter00D:
 
+    hide dorothyPlaceholder
     # scarecrow portrait show 
 
+    show ScarecrowPlaceholder at left
     scarecrow "Excuse me, miss, but may I ask you a question?"
 
+    show dorothyPlaceholder at right
     dorothy "{i}Dumbfounded{/i} Uhm... uh..."
 
     scarecrow "Those shoes of yours are really quite pathetic. Haven’t you ever thought of walking about in something more stylish?"
@@ -177,7 +205,9 @@ label chapter00D:
     
     scarecrow "I guess that makes you one less person to worry about! Good day, miss!"
 
+    hide ScarecrowPlaceholder
     "You shake your head in disbelief as the stranger turns to walk away."
+    hide dorothyPlaceholder
 
     # Go to chapter1
     jump chapter01
