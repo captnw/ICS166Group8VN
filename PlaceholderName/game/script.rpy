@@ -12,14 +12,27 @@ define lion = Character("Lion", color="#ffcc00")
 image ScarecrowPlaceholder = Placeholder("boy")
 image dorothyPlaceholder = Placeholder("girl")
 image lionPlaceholder = Placeholder("boy")
+image tinmanPlaceholder = Placeholder("boy")
+
+image wizPlaceholder = Placeholder("boy")
+image wwWestPlaceholder = Placeholder("girl")
+
+image MaleStranger = Placeholder("boy")
+image FemaleStranger = Placeholder("girl")
+
+
+image randomStreet = Placeholder("bg")
+image policeQuestioningRoom = Placeholder("bg")
+
+# chapter 1
+image crimeScene = Placeholder("bg")
+
+image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
+
 
 # chapter 3
 image bartenderPlaceholder = Placeholder("boy")
 
-# placeholder bg
-
-# chapter 3
-image randomStreet = Placeholder("bg")
 image outsideMunchkinBar = Placeholder("bg")
 image insideMunchkinBar = Placeholder("bg")
 

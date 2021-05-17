@@ -6,11 +6,11 @@ define bartender = Character("Bartender", color="#bfbfbf")
 
 label chapter03:
 
-    "You find yourselves on a busy, well-lit street. It begins to rain softly."
-
     # street bg here, fade in
     scene randomStreet
     with fade
+
+    "You find yourselves on a busy, well-lit street. It begins to rain softly."
 
     # dorthy portrait show
     show dorothyPlaceholder
