@@ -28,6 +28,8 @@ image randomStreet = Placeholder("bg")
 image policeQuestioningRoom = Placeholder("bg")
 
 # prologue 
+define janitor = Character("Janitor", color="#ffcc00")
+
 image outsideBigBen = Placeholder("bg")
 
 # chapter 1
