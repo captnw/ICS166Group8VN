@@ -9,23 +9,21 @@ define Unknown = Character("MAN IN BIG COAT AND HAT", color="#d959d0")
 define randomDude = Character("RANDOM PERSON", color="#ecff80")
 define investigator = Character("\"Investigator\"", color="#9999ff")
 
-#character portraits
-image boyimage = Placeholder("boy")
-image girlimage = Placeholder("girl")
-
-#bg
-image randomStreet = Placeholder("bg")
-image outsideMunchkinBar = Placeholder("bg")
-image insideMunchkinBar = Placeholder("bg")
 
 label chapter01:
 
     "CHAPTER 1: WITHIN THE CROWD"
 
+    scene crimeScene
+    with fade
+
     #description of scene here
     #placeholder of random street
     "You find yourself within the crowd horrified by the dead woman lying down in the middle of everyone."
     "Your camera only inches away from the motionless body and your own body begins to fail as you breath harshly, unable to move from your position."
+
+    show wizBlurred
+    with dissolve
 
     "Then you see a group of police officers coming in with a man in a big coat and hat leading the way."
     "His voice is loud, direct, and terrifying, and he’s telling people to move out of the way."
@@ -33,44 +31,52 @@ label chapter01:
     Unknown "ALRIGHT EVERYONE MOVE OUT OF THE WAY!"
     Unknown "OFFICERS WE NEED TO MAKE A PERIMETER AROUND THIS AREA AND I WILL TAKE CARE OF LOOKING AROUND FOR CLUES AND EVIDENCE."
     
+    hide wizBlurred
+    show MaleStranger at right
+    with dissolve
+
     randomDude "That’s the Lead Inspector. Many call him “The Wiz” because he catches the culprit every time with his brilliance."
 
     "Upon hearing this you grow even more pale to the point where you can also be suspected as a fresh corpse."
+
+    hide MaleStranger
+
     "Due to this you slightly stumble on yourself and see a man within the crowd looking just as terrified as yourself."
 
+    show dorothyPlaceholder at center
+    with dissolve
 
     #choice 1
 menu chapter01Choice01:
     "You finally gather yourself together and make a choice."
 
     "Sneak away":
-        jump ch01C01A
+        hide dorothyPlaceholder
+        "You try to sneak away but end up tripping on yourself. Someone grabs you as you are falling."
+        jump chp01Choice01Cont
 
     "Continue to blend in with the crowd":
-        jump ch01C01B
+        hide dorothyPlaceholder
+        "You try blending in with the crowd, but are grabbed by someone."
+        jump chp01Choice01Cont
 
     "Make a run for it":
-        jump ch01C01C
-
-label ch01C01A:
-    "You try to sneak away but end up tripping on yourself. Someone grabs you as you are falling."
-    jump chp01Choice01Cont
-
-label ch01C01B:
-    "You try blending in with the crowd, but are grabbed by someone."
-    jump chp01Choice01Cont
-    
-label ch01C01C:
-    "You turn around quickly and try to run away, but end up tripping on someone's foot and as you are about to fall someone else grabs your arm."
+        hide dorothyPlaceholder
+        "You turn around quickly and try to run away, but end up tripping on someone's foot and as you are about to fall someone else grabs your arm."
+        jump chp01Choice01Cont
 
 label chp01Choice01Cont:
+
+    show ScarecrowPlaceholder
+    with dissolve
+
     "And this person just starts to scan you up and down."
 
     investigator "Hello there civilian. I am one of the investigators on this case and you look suspicious."
 
     "There is silence for a second, but within that second you break into a cold sweat and wonder if this is it if this was going to be your final moments."
 
-    investigator "*Breaks the silence immediately* Now I will be asking you a couple questions and I want straight answers." 
+    investigator "{i}Breaks the silence immediately{/i} Now I will be asking you a couple questions and I want straight answers." 
     investigator "Got it? GOT IT? Good!"
 
     investigator "Where were you yesterday?! What’s your favorite color?! What were you doing before the incident?!"
@@ -79,42 +85,56 @@ label chp01Choice01Cont:
 
     "As this goes on, you no longer feel unease. In fact you feel very confused about what was going on. But before you can even get a word out “The Wiz” decides to pop in."
 
+    hide ScarecrowPlaceholder
+    show wizPlaceholder
+    with dissolve
+
     wiz "WHAT ARE YOU DOING HERE “SCARECROW”?!" 
     wiz "SNOOPING AROUND CRIME SCENES AGAIN HUH? LEAVE IT TO THE PROFESSIONALS KID."
-    wiz "I APOLOGIZE , YOUNG LADY , IF THIS AMATUER BOTHERED YOU AT ALL."
+    wiz "I APOLOGIZE, YOUNG LADY, IF THIS AMATUER BOTHERED YOU AT ALL."
+
+    hide wizPlaceholder
+    show dorothyPlaceholder
+    with dissolve
 
     #choice 2
 menu chapter01Choice02:
     "How will you respond?"
 
     "Tell the lead investigator that he was not a bother at all":
-        jump ch01C02A
+        dorothy "{i}annoyed{/i} Actually, he was not a bother at all."
+
+        "But the lead investigator doesn’t care and just moves on."
+        jump chp01Choice02Cont
 
     "Sarcastically accepts the apology":
-        jump ch01C02B
+        dorothy "{i}sarcastically{/i} I most gracely accept such a sincere apology."
+        jump chp01Choice02Cont
 
     "Stay silent":
-        jump ch01C02C
-
-label ch01C02A:
-    dorothy "*annoyed* Actually, he was not a bother at all."
-    
-    "But the lead investigator doesn’t care and just moves on."
-    jump chp01Choice02Cont
-
-label ch01C02B:
-    dorothy "*sarcastically* I most gracely accept such a sincere apology."
-    jump chp01Choice02Cont
-    
-label ch01C02C:
-    "You decide to stay silent, but don’t like how Scarecrow was being treated by the Lead Investigator aka “The Wiz” even if he is an ametuar and weird."
+        "You decide to stay silent, but don’t like how Scarecrow was being treated by the Lead Investigator aka “The Wiz” even if he is an ametuar and weird."
+        jump chp01Choice02Cont
 
 label chp01Choice02Cont:
+
+    hide dorothyPlaceholder
+    show wizPlaceholder
+    with dissolve
+
     wiz "SCARECROW JUST GO HOME, YOU’RE JUST BOTHERING EVERYONE AROUND HERE."
+
+    hide wizPlaceholder
+    show ScarecrowPlaceholder
+    with dissolve
 
     scarecrow "yes, sir."
 
     "You watch as Scarecrow walks away with his head down and decide to follow him in order to try and cheer him up because you want to help him feel better."
+
+    scene randomStreet
+    show ScarecrowPlaceholder at right
+    show dorothyPlaceholder at left
+    with fade
 
     dorothy "Hey, hold on!"
     dorothy "Hey!"
@@ -134,14 +154,21 @@ label chp01Choice02Cont:
     scarecrow "Hmm... maybe you're right!!"
     scarecrow "I can probably find the murderer of this incident before anyone else too!!"
 
+    hide ScarecrowPlaceholder
+    show dorothyPlaceholder at center
+    with dissolve
+
     dorothy "Exactly!!"
     dorothy "...wait"
 
     "You are happy about helping Scarecrow bounce back, but now you are worried about all the evidence that would be pointing to you."
     "And as you are having these thoughts you watch as Scarecrow is leaving in excitement."
 
+    show dorothyPlaceholder at left
+    show ScarecrowPlaceholder at right
+    with dissolve
 
-    dorothy "*alarmingly* WAIT!"
+    dorothy "{i}alarmingly{/i} WAIT!"
     dorothy "Um…"
     dorothy "What if I go with you?"
     dorothy "I would love to be there as support."
@@ -169,23 +196,42 @@ label chp01Choice02Cont:
 
     scarecrow "Oh I get ya, let’s head over there now."
 
+    scene policeQuestioningRoom  #transition to the police questioning room
+    with fade
 
-
-    #trantistion to the police questioning room
-    #placeholder police questioning room
     "The WW West is in a questioning room. She is being questioned by the Lead Investigator aka “The Wiz” and a forensic officer Tin Man."
+
+    show wizPlaceholder at center
+    with dissolve
 
     wiz "WE UNDERSTAND THAT YOU HAVE SUFFERED A VERY RECENT LOSS, BUT WE JUST WANTED TO KNOW WHERE YOU WERE DURING THE TIME OF YOUR SISTER’S MURDER"
 
-    WWWest1 "*Silence*"
+    show wizPlaceholder at right
+    show wwWestPlaceholder at left
+    with dissolve
+
+    WWWest1 "{i}Silence{/i}"
 
     wiz "WE KNOW YOUR RELATIONSHIP BETWEEN YOUR SISTER AND YOU WERE A BIT ON THE ROUGH SIDE, BUT DO YOU KNOW ANYONE THAT COULD HAVE HAD A MOTIVE AGAINST HER."
 
-    WWWest "*Silence*"
+    WWWest "{i}Silence{/i}"
 
-    tinman "*whisper* Sir, maybe it’s too soon for this."
+    hide wizPlaceholder
+    hide wwWestPlaceholder
+    show tinmanPlaceholder at center
+    with dissolve
 
-    wiz "*ignoring comment* THIS CAMERA WAS FOUND AT THE SCENE OF THE CRIME."
+    tinman "{i}whisper{/i} Sir, maybe it’s too soon for this."
+
+    hide tinmanPlaceholder
+    show wizPlaceholder at center
+    with dissolve
+
+    wiz "{i}ignoring comment{/i} THIS CAMERA WAS FOUND AT THE SCENE OF THE CRIME."
+
+    hide wizPlaceholder
+    show wwWestPlaceholder at center
+    with dissolve
 
     "The W. W. West sees the blood on the camera."
 
