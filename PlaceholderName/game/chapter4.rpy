@@ -1,7 +1,4 @@
 ﻿# Chapter 4
-# define a character here, once defined, these
-# are shared with all .rpy scripts
-define bartender = Character("Bartender", color="#bfbfbf") 
 
 # placeholder character portraits
 image ScarecrowPlaceholder = Placeholder("boy")
