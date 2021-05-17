@@ -1,9 +1,12 @@
 ﻿# Chapter 4
+# define a character here, once defined, these
+# are shared with all .rpy scripts
+define bartender = Character("Bartender", color="#bfbfbf") 
 
 # placeholder character portraits
-image ScarecrowPlaceholder = Placeholder("boy")
+image scarecrowPlaceholder = Placeholder("boy")
 image dorothyPlaceholder = Placeholder("girl")
-image tinManPlaceholder = Placeholder("boy")
+image tinmanPlaceholder = Placeholder("boy")
 
 # placeholder bg
 image outsideMansion = Placeholder("bg")
@@ -11,14 +14,22 @@ image insideMansion = Placeholder("bg")
 image randomStreet = Placeholder("bg")
 
 label chapter04:
+    
+    "Chapter 4: W. W. WEST'S MANSION"
 
     # outsideMansion bg
+    scene outsideMansion
+    with fade
 
     # scarecrow portrait show
+    show scarecrowPlaceholder at right
+    with dissolve
 
-    scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{/b} rich."
+    scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{b/} rich."
 
     # dorothy portrait show
+    show dorothyPlaceholder at left
+    with dissolve
 
     dorothy "Yea whatever, hopefully she doesn't have a security system."
 
@@ -42,9 +53,11 @@ menu chapter04Choice:
 
 label chapter04A:
     
-    "They sneak over to another bush that's closer to Tin Man'"
+    "They sneak over to another bush that's closer to Tin Man"
 
     #tin man portrait show
+    show tinmanPlaceholder at center
+    with dissolve
 
     tinman "Oh W. W. West how I long for your love. Why is it that you ignore my letters, and that when you do read them you cry and throw them away?"
 
@@ -103,9 +116,18 @@ label chapter04AA:
 
     scarecrow "Oh hi mam would you like to talk to the guy standing outside your window talking to himself?"
 
+    # W. W. West portrait show
+    hide tinmanPlaceholder
+    show wwwestPlaceholder at center 
+    with dissolve 
+
     wwwest "The what? Who?"
 
     "Tin Man and Dorothy dash over to the front door."
+
+    hide scarecrowPlaceholder 
+    show tinmanPlaceholder at right
+    with dissolve 
 
     Tin Man "{i}Out of breath{/i} Hello madam! I was wondering if you uh, um, uhhhhhh..."
 
@@ -117,6 +139,10 @@ label chapter04AA:
 
     wwwest "{i}sigh{/i} yeah okay let me go get some ready in a bag for you, you can come in if you want."
 
+    hide tinmanPlaceholder 
+    show scarecrowPlaceholder 
+    with dissolve 
+
     scarecrow "Sweet! We don’t even have to sneak in now!"
 
     wwwest "What?"
@@ -126,12 +152,26 @@ label chapter04AA:
     "Scarecrow and Dorothy dash into the house with Tin Man trailing behind, W.W. West walks in behind them shaking her head."
 
     # insideMansion bg
+    scene insideMansion
+    with fade
+
+    show wwwestPlaceholder at center 
+    with dissolve
 
     wwwest "You can just have a seat over there while I go find the sugar."
 
+    hide wwwestPlaceholder
+    with dissolve
+
     "The three sit on the couch."
 
+    show tinmanPlaceholder at right
+    with dissolve
+
     tinman "{i}sigh{/i} now she’s probably going to hate me more than she already does."
+
+    show dorothyPlaceholder at left 
+    with dissolve
 
     dorothy "What do you mean?"
 
@@ -155,6 +195,9 @@ label chapter04AAA:
 
     dorothy "Obviously."
 
+    show scarecrowPlaceholder at center 
+    with dissolve
+
     scarecrow "How many love letters have you even sent, it’s been like, a day."
 
     tinman "{i}glaring at Scarecrow{/i} Love cannot wait for the mourning of loss! She’s gotta move on somehow, I thought maybe I could help her, and that maybe she could help me."
@@ -171,7 +214,14 @@ label chapter04AAA:
 
     tinman "You know what? I think I will. Thank you, you two, I knew my heart was right about you both."
 
+    hide tinmanPlaceholder 
+    with dissolve
+
     "Tin Man walks away into another room where the W.W. West is."
+
+    hide scarecrowPlaceholder 
+    show scarecrowPlaceholder at right 
+    with dissolve
 
     dorothy "Scarecrow you’re a genius! Now we can look around while she’s distracted."
 
@@ -182,6 +232,9 @@ label chapter04AAA:
     scarecrow "Aye aye captain!"
 
     dorothy "What?"
+
+    hide scarecrowPlaceholder 
+    with dissolve
 
     "Scarecrow darts upstairs."
 
@@ -196,6 +249,10 @@ menu chapter04AABChoice:
 label chapter04AAB:
 
     "Dorothy sneaks over to eavesdrop on Tin Man and W. W. West's conversation."
+
+    show tinmanPlaceholder at center 
+    show wwwestPlaceholder at right 
+    with dissolve 
 
     tinman "I'm also sorry about the love- uh I mean forensic letters, I suppose we sent those out a bit too early."
 
@@ -212,6 +269,10 @@ label chapter04AAB:
     jump chapter04AAC 
 
 label chapter04AAC:
+
+    hide tinmanPlaceholder 
+    show scarecrowPlaceholder at center
+    with dissolve
 
     scarecrow "{i}Heard from the second story{/i} {b}FOUND IT!{/b}"
 
@@ -232,8 +293,16 @@ label chapter04AAC:
     "Dorothy and Scarecrow run out the front door and get away"
 
     # randomStreet bg
+    scene randomStreet
+    with fade
+
+    show dorothyPlaceholder at left
+    with dissolve
 
     dorothy "{i}Out of breath{/i} Why the heck dd you have to shout that you found it?"
+
+    show scarecrowPlaceholder at right 
+    with dissolve 
 
     scarecrow "Sorry, I was just really excited."
 
@@ -261,10 +330,16 @@ label chapter04AAC:
 
     "Dorothy grabs Scarecrow and they walk off"
 
+    scene black
+    with dissolve
+
     jump chapter05
 
 label chapter04B:
     
+    show tinmanPlaceholder at center
+    with dissolve 
+
     "Dorothy steps out from behind the bush and goes and walks over to Tin Man."
 
     dorothy "Hey, what do you think you’re doing over here? You stalking W.W. West or something?"
@@ -281,7 +356,14 @@ label chapter04B:
 
     "Footsteps are heard from within the mansion, and then the door creaks open."
 
+    hide scarecrowPlaceholder 
+    show wwwestPlaceholder at right 
+    with dissolve 
+
     wwwest "Hello!? What the hell are you people doing on my lawn!? What are you yelling about!? Get out of here before I call the cops!"
+
+    hide tinmanPlaceholder 
+    with dissolve 
 
     "Tin Man runs away immediately"
 
@@ -305,5 +387,8 @@ label chapter04BB:
     wwwest "Alright I’m getting my phone!"
 
     "Dorothy and Scarecrow run away from the mansion"
+
+    scene black
+    with dissolve
 
     jump chapter05
