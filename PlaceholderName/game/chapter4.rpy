@@ -16,7 +16,7 @@ label chapter04:
 
     # scarecrow portrait show
 
-    scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{b/} rich."
+    scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{/b} rich."
 
     # dorothy portrait show
 
