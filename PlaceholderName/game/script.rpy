@@ -9,7 +9,6 @@ define tinman = Character("Tin Man", color="#99cc00")
 define lion = Character("Lion", color="#ffcc00")
 define wwwest = Character("W. W. West", color="#ffcc00")
 define wiz = Character("The Wiz", color="#ffcc00")
-define janitor = Character("Janitor", color="#ffcc00")
 
 # placeholder character portraits
 image ScarecrowPlaceholder = Placeholder("boy")
@@ -210,6 +209,9 @@ label chapter00D:
     hide ScarecrowPlaceholder
     "You shake your head in disbelief as the stranger turns to walk away."
     hide dorothyPlaceholder
+
+    scene black
+    with dissolve
 
     # Go to chapter1
     jump chapter01

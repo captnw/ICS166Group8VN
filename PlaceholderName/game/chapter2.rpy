@@ -16,9 +16,19 @@ label chapter02:
 
     "As you peak behind the corner, you saw the Wicked witch of the west being interrogated by 'the Wiz' and his partner."
 
+    show dorothyPlaceholder
+    with dissolve
+
     dorothy "{i}whisper{/i} Look over there! There’s  the camera from the crime scene!"
 
+    hide dorothyPlaceholder
+    show ScarecrowPlaceholder
+    with dissolve
+
     scarecrow "{i}whisper{/i} What do you think we should do? Should we grab it or should we eavesdrop more?"
+
+    hide ScarecrowPlaceholder
+    show dorothyPlaceholder
 
 menu chapter02Choice:
     "What should I say...?"
@@ -31,13 +41,26 @@ menu chapter02Choice:
 
 label chapter02A:
 
+    scene policeQuestioningRoom
+    show wizPlaceholder
+    with fade
+
     "The Wiz is visibly getting irritated at WWWest’s uncooperative nature."
+
+    show wizPlaceholder at left
+    show tinmanPlaceholder at right
+    with dissolve
 
     tinman "{i}puts hand on the Wiz's shoulder{/i} Let’s take a break."
 
     tinman "{i}to WWest{/i} We'll talk again in an hour."
 
+    hide wizPlaceholder
+    hide tinmanPlaceholder
+
     "The Wiz and his partner leaves the room, and WWest is escorted out of the room shortly afterwards."
+
+    
 
     scarecrow "{i}whispers urgently{/i} Quick! Now’s our chance to take back your camera!"
 
@@ -52,6 +75,9 @@ label chapter02A:
     jump chapter02MainPath
 
 label chapter02B:
+
+    scene policeQuestioningRoom
+    with fade
 
     wiz "YOU CAN REMAIN SILENT ALL YOU WANT, BUT THE EARLIER YOU SPEAK UP, THE EASIER IT WILL BE FOR YOU."
 

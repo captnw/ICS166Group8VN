@@ -25,7 +25,7 @@ label chapter04:
     show scarecrowPlaceholder at right
     with dissolve
 
-    scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{b/} rich."
+    scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{/b} rich."
 
     # dorothy portrait show
     show dorothyPlaceholder at left
@@ -129,7 +129,7 @@ label chapter04AA:
     show tinmanPlaceholder at right
     with dissolve 
 
-    Tin Man "{i}Out of breath{/i} Hello madam! I was wondering if you uh, um, uhhhhhh..."
+    tinman "{i}Out of breath{/i} Hello madam! I was wondering if you uh, um, uhhhhhh..."
 
     dorothy "We were wondering if we could borrow some sugar?"
 
@@ -140,7 +140,7 @@ label chapter04AA:
     wwwest "{i}sigh{/i} yeah okay let me go get some ready in a bag for you, you can come in if you want."
 
     hide tinmanPlaceholder 
-    show scarecrowPlaceholder 
+    show scarecrowPlaceholder at right
     with dissolve 
 
     scarecrow "Sweet! We don’t even have to sneak in now!"
