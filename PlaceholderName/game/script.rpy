@@ -9,6 +9,7 @@ define tinman = Character("Tin Man", color="#99cc00")
 define lion = Character("Lion", color="#ffcc00")
 define wwwest = Character("W. W. West", color="#ffcc00")
 define wiz = Character("The Wiz", color="#ffcc00")
+define stranger = Character("Stranger", color="#888888")
 
 # placeholder character portraits
 image ScarecrowPlaceholder = Placeholder("boy")
@@ -22,14 +23,16 @@ image wwWestPlaceholder = Placeholder("girl")
 image MaleStranger = Placeholder("boy")
 image FemaleStranger = Placeholder("girl")
 
-
 image randomStreet = Placeholder("bg")
 image policeQuestioningRoom = Placeholder("bg")
 
 # prologue 
-define janitor = Character("Janitor", color="#ffcc00")
+image outsideBigBen = "london street.jpg"
+image insideBigBen = Placeholder("bg")
 
-image outsideBigBen = Placeholder("bg")
+image londonPhoto1 = "london photo bridge.jpg"
+image londonPhoto2 = "london photo bridge.jpg"
+image londonPhoto3 = "london photo bridge.jpg"
 
 # chapter 1
 image crimeScene = Placeholder("bg")
@@ -50,51 +53,14 @@ image insideMansion = Placeholder("bg")
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    #scene big ben exterior
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    #show dorothy happy
-
-    # These display lines of dialogue.
-
-    #dorothy "Oh, I just LOVE looking down on London from the top of Big Ben!"
-    #dorothy "All those lovely people don't even know that they are getting their photos taken!"
-
-    #hide dorothy happy
-
-    #"*Click!"
-
-    #scene london photo
-
-    #"You snap a picture.  Looks great!"
-
-    #heartless "Hey, you there!  Come away from the edge!"
-    #dorothy "Oh, bug off, mister!"
-    #"*So rude...*"
-
-    #scene big ben exterior
-    #show dorothy happy
-
-    #dorothy "This is the only way I can get the *best photos*, anyways!"
-    #dorothy "Now let's see... where's the button for..."
-    #dorothy "...?!"
-
     # outsideBigBen bg
     show outsideBigBen
 
     show dorothyPlaceholder at center
-    "Your name is Dorothy and you are simply ecstatic to go to Big Ben today to capture more of your favorite photos of London’s charming cityscape!"
-
-    # dorothy portrait show
+    "Your name is Dorothy and you are simply ecstatic 
+    to go to Big Ben today to capture more of your favorite photos 
+    of London’s charming cityscape!"
     
-
     dorothy "Oh, this is the perfect day for taking photos of London! We so rarely get sunny days like this."
 
     "You inhale a huge breath of fresh air and lift your arms all the way over your head so your skin can drink in the warm sun."
@@ -108,7 +74,7 @@ label start:
     # lion portrait show
     show lionPlaceholder at left
 
-    janitor "{i}Unreasonably scared{/i} GAAAH! Uhm, hello...?!"
+    lion "GAAAH! Oh... ah, hello!"
 
     hide lionPlaceholder
 
@@ -159,9 +125,10 @@ label chapter00A:
     
     "You turn around with a twinkle in your eye and start skipping and waving towards the grumpy man."
 
-    dorothy "{i}Cheerfully{/i} Excuse me, sir?! It's such a beautiful day!  Why the long…"
+    dorothy "Excuse me, sir?! It's such a beautiful day!  Why the long…"
 
-    "You’re still a few feet away when suddenly your vision is crowded with the color green! A strange man in a green shirt has just cut in front of you!"
+    "You’re still a few feet away when suddenly your vision is crowded with the color green! 
+    A strange man in a green shirt has just cut in front of you!"
 
     jump chapter00D
 
@@ -181,7 +148,7 @@ label chapter00C:
     
     "You keep skipping on your merry way, trying to imagine what the grumpy man might look like if he was more cheerful."
 
-    dorothy "{i}To self{/i} I’ll bet his smile looks rather handsome"
+    dorothy "{i}I’ll bet his smile looks rather handsome{/i}"
 
     "You have no time to imagine it though, because a strange-looking man in a green shirt has suddenly started addressing you!"
 
@@ -196,22 +163,131 @@ label chapter00D:
     scarecrow "Excuse me, miss, but may I ask you a question?"
 
     show dorothyPlaceholder at right
-    dorothy "{i}Dumbfounded{/i} Uhm... uh..."
+    dorothy "Uhm... uh..."
 
-    scarecrow "Those shoes of yours are really quite pathetic. Haven’t you ever thought of walking about in something more stylish?"
+    scarecrow "Those shoes of yours are really quite plain. Haven’t you ever thought of walking about in something more stylish?"
 
-    dorothy "{i}offended{/i} Excuse me?! These shoes suit me just fine for long walks, thanks!" 
+    dorothy "{i}Excuse me?!{/i} These shoes suit me just fine for long walks, thanks!" 
 
-    scarecrow "Well, there are those who would kill for a pricey pair of stylish shoes. Hm… {i}thinks for a moment, then smiles{/i}"
+    scarecrow "Well, you know there are those who would {i}kill{/i} for a pricey pair of stylish shoes. Hm…"
     
+    "The strange man seems to think deeply about something before smiling"
+
     scarecrow "I guess that makes you one less person to worry about! Good day, miss!"
 
     hide ScarecrowPlaceholder
-    "You shake your head in disbelief as the stranger turns to walk away."
+    "You stand for a moment, dumbfounded.  
+    After a moment’s thought, you walk on towards Big Ben with a confident stride.
+    You are quite proud of the shoes you are wearing and you don’t care who knows it!"
     hide dorothyPlaceholder
 
-    scene black
-    with dissolve
+    scene insideBigBen
+    with fade
+
+    show dorothyPlaceholder
+
+    dorothy "Hmmm... Let's see here..."
+
+    "Your eyes are scanning the cityscape below you.  You're thinking very hard about which part would make the best photo"
+
+    "There's a fountain in the city square that looks lovely in the sunlight!"
+
+    "But then, the buildings on the East Side there are casting long dramatic shadows..."
+
+    "And then there's the river reflecting the sunlight just under that beautiful bridge!"
+
+    dorothy "What to do... what to do..."
+
+menu chapter00Choice2:
+    
+    "Take a picture of the city square with the fountain":
+        scene londonPhoto1 with fade
+        jump chapter00Result2
+
+    "Take a picture of the shadowy buildings on the East Side":
+        scene londonPhoto2 with fade
+        jump chapter00Result2
+    
+    "Take a picture of the bridge suspended over the river":
+        scene londonPhoto3 with fade
+        jump chapter00Result2
+
+label chapter00Result2:
+
+    hide dorothyPlaceholder
+
+    "Wait... what's this?"
+
+    dorothy "Oh... It still looks overcast..."
+
+    "The sun must have ducked back behind the clouds right as you took the photo..."
+
+    dorothy "Maybe if I wait a moment, the sun will come back out!"
+
+    scene insideBigBen with fade
+    show dorothyPlaceholder
+
+    "You're staring intently at the place in the sky where the sun is still hidden..."
+
+    dorothy "Any second now..."
+
+    "You notice a patch of empty sky moving closer and closer to the sun"
+
+    dorothy "This is it!"
+
+    "You point your camera back at your target and get ready to snap the photo"
+
+    dorothy "Almost..."
+
+    dorothy "GAH! Too bright!"
+
+    dorothy "..."
+
+    dorothy "...!"
+
+    dorothy "SHIT!"
+
+    "You watch in disbelief as your camera shrinks into a tiny black speck down below you.
+    You just dropped it off the side of Big Ben!"
+
+    dorothy "Oooooooh! That was my {i}best{/i} camera..."
+
+    "You stand for a moment in disbelief, just staring out at the cityscape."
+
+    "That was your best camera, and now you've just thrown it off the side of the tallest building in London!
+    How on earth do you plan on {i}paying{/i}..."
+
+    stranger "EEEEEEEK!"
+
+    stranger "AAAARGH!"
+
+    "Your blood runs cold as hideous shrieks start rising up from the street right where your camera fell"
+
+    dorothy "What the hell?!"
+
+    "You look down at the street.  There's quite a commotion building at the base of Big Ben"
+
+    "A horrifying thought occurs to you"
+
+    dorothy "Did my camera... {i}hit someone?{/i}"
+
+    "You feel like you're gonna be sick"
+
+    dorothy "Oh God..."
+
+    "Almost as soon as the words are out of your mouth, 
+    you turn around and start flying down the stairs as fast as your running shoes can carry you"
+
+    dorothy "Damn it... DAMN IT!"
+
+    "The dull sounds of sirens echo through the halls of Big Ben.  The trip down the tower seems to take eons"
+
+    dorothy "Please don't be true... please don't be true..."
+
+    "Hyperventilating and trembling all over, you finally reach the city street at the foot of Big Ben..."
+
+    hide dorothyPlaceholder
+    scene black with fade
 
     # Go to chapter1
     jump chapter01
