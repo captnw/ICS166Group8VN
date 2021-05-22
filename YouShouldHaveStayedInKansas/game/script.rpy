@@ -69,7 +69,7 @@ init python:
     hasCollectedTinManNote = False
 
     # Misc variables (mainly used for dialogue in chapter 5)
-    hasListenedInOnWitchCh4 = False # eavesdropped on Witch's and Tinman's conversation
+    hasListenedToWitchCh4 = False
 
     doYouSuspectYourself = True # true until ...
 
@@ -77,7 +77,8 @@ init python:
 label start:
 
     # outsideBigBen bg
-    show outsideBigBen
+    scene outsideBigBen :
+        zoom 1.5
 
     show dorothyPlaceholder at center
     "Your name is Dorothy and you are simply ecstatic 
@@ -221,29 +222,47 @@ label chapter00D:
 
     dorothy "What to do... what to do..."
 
+    hide dorothyPlaceholder
+
 menu chapter00Choice2:
     
     "Take a picture of the city square with the fountain":
-        scene londonPhoto1 with fade
+        scene londonPhoto1 at truecenter with fade :
+            zoom 1.5
+
+        "You look out on the city square with the shimmering fountain."
+
         jump chapter00Result2
 
     "Take a picture of the shadowy buildings on the East Side":
-        scene londonPhoto2 with fade
+        scene londonPhoto2 at truecenter with fade :
+            zoom 1.5
+
+        "You look out on the shadowy buildings on the East Side."
+        
         jump chapter00Result2
     
     "Take a picture of the bridge suspended over the river":
-        scene londonPhoto3 with fade
+        scene londonPhoto3 at truecenter with fade :
+            zoom 1.5
+
+        "You look out on the bridge suspended over the river."
+
         jump chapter00Result2
 
 label chapter00Result2:
 
-    hide dorothyPlaceholder
+    "*Click!" 
 
-    "Wait... what's this?"
+    dorothy "Hmm..."
 
-    dorothy "Oh... It still looks overcast..."
+    "You can't be sure how the photo turned out until you spend time to develop them.
+    Just by observing the cityscape, you notice one potential problem..."
 
-    "The sun must have ducked back behind the clouds right as you took the photo..."
+    dorothy "Aw... it's overcast again..."
+
+    "You can't be sure if the photo you got was sunny or not.  
+    The sun might have ducked back behind the clouds right as you took the photo."
 
     dorothy "Maybe if I wait a moment, the sun will come back out!"
 
