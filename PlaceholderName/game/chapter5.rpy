@@ -222,4 +222,181 @@ label choiceE:
 
 
 label moveON:
+    #dorothy feels guilty
+    dorothy "..."
+
+    scarecrow "Hey, listen...I know it seems kinda pointless, you know?"
+
+    dorothy "..."
+    
+    scarecrow "I used to think I couldn’t figure out anything. I was...kind of the idiot, you know? In school, and after, I...wasn’t really good at a lot of things." 
+    scarecrow "Every chance I got, he rejected me from the academy because I always got in the way with my silly ideas. Scarecrow the brainless, that’s what they all called me." 
+    scarecrow "Before I met you, I thought of, y’know, giving up. I wasn’t good at anything, why would I think I’d be good at this?"
+
+    "He gestures at the chalkboard."
+
+    scarecrow "But then, you showed up, and you seemed so eager to figure it out with me, I thought maybe...I wasn’t all that bad after all. If this one kid follows me, maybe I’m actually good." 
+    scarecrow "At being a detective."
+    scarecrow "So. Thanks, I guess."
+    scarecrow "It’s been...really fun."
+
+
+    #dorothy knows she's not guilty
+    dorothy "Man, this is a lot of evidence."
+
+    scarecrow "Yeah. But that’s good! We’re getting somewhere!"
+
+    dorothy "Hey, Scarecrow?"
+
+    scarecrow "Yeah?"
+
+    dorothy "If you had to pick...between helping a friend and finding the truth, what would you pick?"
+
+    scarecrow "The truth, obviously."
+    
+    dorothy "Right."
+
+    scarecrow "That is a very strange question, Dorothy."
+
+    dorothy "Yeah?"
+
+    scarecrow "I mean, if two people are friends, hypothetically speaking, they would not hinder each other from the truth, wouldn’t they? Friends don’t lie to each other."
+
+    "You are both silent for a moment. You want to tell Scarecrow you were at the tower that day, that it was your camera, but something’s holding you back."
+
+    "Fear, probably. You don’t know anyone in this city. You didn’t know anyone until today."
+
+    scarecrow "{i}I’M NOT A REAL DETECTIVE!{/i}"
+
+    scarecrow "Few, that felt good to get off my chest."
+
+    scarecrow "I wanted to be! But I used to think I couldn’t figure out anything. I was...kind of the idiot, you know? In school, and after, I...wasn’t really good at a lot of things."
+    
+    scarecrow "Every chance I got, he rejected me from the academy because I always got in the way with my silly ideas. Scarecrow the brainless, that’s what they all called me." 
+    scarecrow "Before I met you, I thought of, y’know, giving up. I wasn’t good at anything, why would I think I’d be good at this?"
+
+    "He gestures at the chalkboard."
+
+    scarecrow "But then, you showed up, and you seemed so eager to figure it out with me, I thought maybe...I wasn’t all that bad after all. If this one kid follows me, maybe I’m actually good." 
+    scarecrow "At being a detective."
+    scarecrow "So. Thanks, I guess."
+    scarecrow "It’s been...really fun."
+
+menu dorothychoice:
+    "Your choice"
+
+    "Say nothing.":
+        jump saynothing
+
+    "Comfort Scarecrow.":
+        jump comfort
+
+
+label saynothing:
+
+    dorothy "..."
+
+    scarecrow "But you don’t look that eager now. Maybe I am the idiot, huh? Running us in circles? I get it."
+
+    "He gestures toward the door."
+
+    scarecrow "You should go home. Your parents are probably looking for you."
+
+    dorothy "...Yeah, I guess you’re right."
+
+    "You turn to leave. As you walk out the door, Scarecrow calls out."
+
+    scarecrow "Wait!"
+
+    "You pause."
+
+    scarecrow "I..."
+
+    scarecrow "Nevermind. Be safe."
+
+    dorothy "...I will"
+
+    jump bridgescene
+
+
+label comfort:
+    dorothy "You’re not stupid, you know."
+
+    scarecrow "Thanks."
+
+    dorothy "Okay, you make stupid decisions...sometimes. A lot of the time. All the time."
+
+    dorothy "But. You’re good at figuring things out. And better than that, you care. Not a lot of people care as much as you do, you know? About finding the truth."
+
+    "Scarecrow looks at the board of clues. He fidgets with the chalk."
+
+    scarecrow "Thanks, I guess. Maybe you're-"
+
+    dorothy "I'm right."
+
+    "Scarecrow laughs."
+
+    scarecrow "Maybe I'm not brainless after all."
+
+    scarecrow "I think this story is all coming together. I just need...another night. (if dorothy gives him the tape) plus we need to develop that tape. Give me until tomorrow morning, all right?"
+
+    dorothy "Sure. I should be getting home anyway."
+
+    scarecrow "Hey, Dorothy?"
+
+    dorothy "Yeah?"
+
+    scarecrow "Be safe."
+
+    dorothy "I will."
+
+    
+
+label bridgescene:
+
+    "You stand outside at nighttime. You're crossing the London Bridge when you see a tall, dark figure in your path. The fog is too thick for you to see clearly."
+
+    dorothy "Hello?"
+
+    wwwest "You."
+
+    "W. W. West steps out of the fog. She looks like she hasn’t slept in days. Her face is full of contempt and suspicion."
+
+    wwwest "I know you wanted to take something from me."
+
+    dorothy "Listen, Scarecrow and I were just-"
+
+    wwwest "It was you, wasn't it? You killed her."
+
+menu bridgescenedialogue:
+    "...":
+        jump bridgescenecontinued
+
+    "Listen, I know I look super suspicious, but it wasn’t me, I swear-":
+        jump bridgescenecontinued
+
+label bridgescenecontinued:
+    wwwest "Don’t lie to me! It was you! My sister is dead because of you!"
+
+    dorothy "With what proof?"
+
+    wwwest "The Wizard-"
+
+    dorothy "Do you really trust the Wizard?"
+
+    wwwest "You’ll pay for this, girl, I swear. You will pay for my loss."
+    
+    "A cloud of fog erupts from the air. The witch disappears into it. You are left standing in the cold, alone."
+
+    dorothy "{i}muttering{\i} 'Be safe, Dorothy', what a dumb thing to promise."
+
+    "Back at Scarecrow’s place, the wannabe detective is cooking up some polaroids." 
+    #Depending on if Dorothy gives him the tape or not, there will be one hanging at his side, drying. 
+    
+    "He picks up another polaroid and brings it to his eyes. He can just make out what it’s depicting. His eyes widen."
+
+    scarecrow "{i}Oh.{\i}"
+
+    "FADE TO BLACK"
+
     jump chapter06
