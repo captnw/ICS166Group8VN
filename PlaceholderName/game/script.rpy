@@ -39,6 +39,11 @@ image crimeScene = Placeholder("bg")
 
 image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
 
+# chapter2
+image outsidePoliceStation = Placeholder("bg")
+
+image RandomPoliceOfficer = Placeholder("girl")
+
 # chapter 3
 image bartenderPlaceholder = Placeholder("boy")
 
