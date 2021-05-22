@@ -69,7 +69,7 @@ init python:
     hasCollectedTinManNote = False
 
     # Misc variables (mainly used for dialogue in chapter 5)
-    hasListenedToWitchCh4 = False
+    hasListenedInOnWitchCh4 = False # eavesdropped on Witch's and Tinman's conversation
 
     doYouSuspectYourself = True # true until ...
 

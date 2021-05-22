@@ -254,6 +254,8 @@ label chapter04AAB:
     show wwwestPlaceholder at right 
     with dissolve 
 
+    $ hasListenedInOnWitchCh4 = True
+
     tinman "I'm also sorry about the love- uh I mean forensic letters, I suppose we sent those out a bit too early."
 
     wwwest "Yea, you think? Anyway, did you guys find her shoes yet? Those were a very important family heirloom."

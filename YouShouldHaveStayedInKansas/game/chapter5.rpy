@@ -23,89 +23,71 @@ label chapter05:
 
     scarecrow "So! What do we know?"
 
-label choice1:
+label .choice1:
 menu evidenceMenu:
     "This menu depends on what you have managed to collect and what you haven’t. This will reappear until you decide to \"Move on\" from talking about the evidence."
 
     "Pick photo of Red Shoes" if hasCollectedRedShoesPhoto:
-        jump choiceA
+        jump .choiceA
 
     "Pick Lion's Testimony" if hasListenedToLionsTestimony:
-        jump choiceB
+        jump .choiceB
 
     "Pick Camera" if hasCollectedCamera:
-        jump choiceC
+        jump .choiceC
 
     "Pick Tape" if hasCollectedTape:
-        jump choiceD
+        jump .choiceD
 
     "Pick Note" if hasCollectedTinManNote:
-        jump choiceE
+        jump .choiceE
 
     "Move on":
-        jump moveON
+        jump .moveON
 
-label choiceA:
+label .choiceA:
     scarecrow "Ah, the photo at the W.W. West's mansion! She seemed to have stolen it from the evidence room, suspicious, isn’t it?"
 
-menu chA01:
+menu .chA01:
     "What will be your response?"
 
     "I mean, we’ve also stolen stuff from the evidence room…":
-        jump chA01a
+        scarecrow "Details!"
+
+        jump .chA01cont
 
     "Suspicious! Yep, super suspicious!":
-        jump chA01b
+        scarecrow "ISN'T IT?"
 
-label chA01a:
-    dorothy "I mean, we’ve also stolen stuff from the evidence room…"
+        jump .chA01cont
 
-    scarecrow "Details!"
-    jump chA01cont
-
-label chA01b:
-    dorothy "Suspicious! Yep, super suspicious!"
-
-    scarecrow "ISN'T IT?"
-
-label chA01cont:
-
+label .chA01cont:
     scarecrow "But what is the significance of these shoes...and why were they missing from the crime scene?"
 
-menu chA02:
+menu .chA02:
     "What will be your response?"
 
     "These shoes could be the reason why she died.":
-        jump chA02a
+        scarecrow "A motive? Those do look like very fancy shoes...and the photo clearly shows a secret compartment."
+
+        scarecrow "Maybe there was something important hidden in those shoes!"
+
+        dorothy "Yeah, and the murderer took them off her cooling corpse!"
+
+        scarecrow "{i}sounding delighted{\i} How morbid!"
+
+        if hasListenedInOnWitchCh4:
+            dorothy "The red shoes are a family heirloom."
+            #IFFFF ---->>> If Dorothy listens in on the witch in ch4: She also mentioned them being a family heirloom.
+        
+        jump .choice1
 
     "Maybe they’re a red herring, haha get it?":
-        jump chA02b
+        scarecrow "That was horrible…(sniff) I’m so proud…"
 
-label chA02a:
-    dorothy "These shoes could be the reason why she died."
+        jump .choice1
 
-    scarecrow "A motive? Those do look like very fancy shoes...and the photo clearly shows a secret compartment."
-
-    scarecrow "Maybe there was something important hidden in those shoes!"
-
-    dorothy "Yeah, and the murderer took them off her cooling corpse!"
-
-    scarecrow "{i}sounding delighted{\i} How morbid!"
-
-    #IFFFF ---->>> If Dorothy listens in on the witch in ch4: She also mentioned them being a family heirloom.
-    
-    jump chA02cont
-
-label chA02b:
-    dorothy "Maybe they’re a red herring, haha get it?"
-
-    scarecrow "That was horrible…(sniff) I’m so proud…"
-
-label chA02cont:
-
-    jump choice1
-
-label choiceB:
+label .choiceB:
 
     scarecrow "The lion said there was someone in a heated argument with the victim before the murder. They said...huh, I can’t remember."
 
@@ -140,9 +122,9 @@ label choiceB:
 
     scarecrow "Anyway!"
 
-    jump choice1
+    jump .choice1
 
-label choiceC:
+label .choiceC:
     scarecrow "Ah, the camera found at the crime scene! The CLUE TO EVERYTHING!"
 
     dorothy "Is it?"
@@ -160,15 +142,13 @@ label choiceC:
     scarecrow "I think…"
 
     if doYouSuspectYourself:
-    
         scarecrow "That this camera might be the murder weapon."
     else:
-
         scarecrow "That this camera probably doesn’t matter."
 
-    jump choice1
+    jump .choice1
 
-label choiceD:
+label .choiceD:
     scarecrow "This tape we got from the evidence room..."
 
     scarecrow "It was probably in the camera we found. Though I guess the tape doesn’t matter as much as what’s on it, doesn’t it?"
@@ -180,15 +160,13 @@ label choiceD:
     scarecrow "It will take me tonight, so we’ll find out in the morning. I do hope it’s something relevant. I’m glad you found it, Dorothy."
 
     if doYouSuspectYourself:
-
         dorothy "sure."
     else:
-
         dorothy "We need to find out what’s on that tape!"
 
-    jump choice1
+    jump .choice1
 
-label choiceE:
+label .choiceE:
     scarecrow "The note the Tin Man gave us...seemingly for free."
 
     dorothy "Yeah, that was weird."
@@ -200,7 +178,57 @@ label choiceE:
 
     scarecrow "An admirable effort! But we’re definitely not doing that!"
 
-    jump choice1
+    jump .choice1
 
-label moveON:
+label .moveON:
+
+    if doYouSuspectYourself:
+        dorothy "..."
+
+        scarecrow "Hey, listen…I know it seems pointless, you know?"
+
+        dorothy "..."
+
+        scarecrow "I used to think I couldn’t figure out anything. I was...kind of the idiot, you know?"
+    else:
+        dorothy "Man, this is a lot of evidence."
+
+        scarecrow "Yeah. But that’s good! We’re getting somewhere!"
+
+        dorothy "Hey, Scarecrow?"
+
+        scarecrow "What’s up?"
+
+        dorothy "If you had to pick...between helping a friend and finding the truth, what would you pick?"
+
+        scarecrow "The truth, obviously."
+
+        dorothy "Right."
+
+        scarecrow "That is a very strange question, Dorothy."
+
+        dorothy "Yeah?"
+
+        scarecrow "I mean, if two people are friends, hypothetically speaking, they would not hinder each other from the truth, wouldn’t they?"
+        scarecrow "Friends don’t lie to each other."
+
+        "You are both silent for a moment."
+        "You want to tell Scarecrow you were at the tower that day, that it was your camera, but something’s holding you back. Fear, probably."
+        "You don’t know anyone in this city."
+        "You didn’t know anyone until today."
+
+        scarecrow "I’M NOT A REAL DETECTIVE!"
+
+        scarecrow "Few, that felt good to get off my chest."
+
+        scarecrow "I wanted to be! But I used to think I couldn’t figure out anything. I was...kind of the idiot, you know?"
+    
+    scarecrow "In school, and after, I...wasn’t really good at a lot of things."
+    scarecrow "{b}Every chance I got, he rejected me from the academy because I always got in the way with my silly ideas{/b}"
+    scarecrow "Scarecrow the brainless, that’s what they all called me."
+    scarecrow "Before I met you, I thought of, y’know, giving up. I wasn’t good at anything, why would I think I’d be good at this? {i}he gestures at the chalkboard{/i}"
+    scarecrow "But then, you showed up, and you seemed so eager to figure it out with me, I thought maybe...I wasn’t all that bad after all."
+    scarecrow "If this one kid follows me, maybe I’m actually good. At being a detective."
+    scarecrow "So. Thanks, I guess. It’s been...really fun."
+
     jump chapter06
