@@ -224,7 +224,7 @@ label CH5moveON:
         scarecrow "I wanted to be! But I used to think I couldn’t figure out anything. I was...kind of the idiot, you know?"
     
     scarecrow "In school, and after, I...wasn’t really good at a lot of things."
-    scarecrow "{b}Every chance I got, he rejected me from the academy because I always got in the way with my silly ideas{/b}"
+    scarecrow "Every chance I got, he rejected me from the academy because I always got in the way with my silly ideas."
     scarecrow "Scarecrow the brainless, that’s what they all called me."
     scarecrow "Before I met you, I thought of, y’know, giving up. I wasn’t good at anything, why would I think I’d be good at this? {i}he gestures at the chalkboard{/i}"
     scarecrow "But then, you showed up, and you seemed so eager to figure it out with me, I thought maybe...I wasn’t all that bad after all."
