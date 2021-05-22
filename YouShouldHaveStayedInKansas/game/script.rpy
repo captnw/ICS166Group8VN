@@ -55,7 +55,8 @@ image outsideMansion = Placeholder("bg")
 image insideMansion = Placeholder("bg")
 
 # chapter 5
-
+image scarecrowApartment = Placeholder("bg")
+image londonBridge = Placeholder("bg")
 
 # Runs python at initilization time, before the Game loads
 init python:
