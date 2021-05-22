@@ -23,48 +23,48 @@ label chapter05:
 
     scarecrow "So! What do we know?"
 
-label .choice1:
+label CH5choice1:
 menu evidenceMenu:
     "This menu depends on what you have managed to collect and what you haven’t. This will reappear until you decide to \"Move on\" from talking about the evidence."
 
     "Pick photo of Red Shoes" if hasCollectedRedShoesPhoto:
-        jump .choiceA
+        jump CH5choiceA
 
     "Pick Lion's Testimony" if hasListenedToLionsTestimony:
-        jump .choiceB
+        jump CH5choiceB
 
     "Pick Camera" if hasCollectedCamera:
-        jump .choiceC
+        jump CH5choiceC
 
     "Pick Tape" if hasCollectedTape:
-        jump .choiceD
+        jump CH5choiceD
 
     "Pick Note" if hasCollectedTinManNote:
-        jump .choiceE
+        jump CH5choiceE
 
     "Move on":
-        jump .moveON
+        jump CH5moveON
 
-label .choiceA:
+label CH5choiceA:
     scarecrow "Ah, the photo at the W.W. West's mansion! She seemed to have stolen it from the evidence room, suspicious, isn’t it?"
 
-menu .chA01:
+menu chA01:
     "What will be your response?"
 
     "I mean, we’ve also stolen stuff from the evidence room…":
         scarecrow "Details!"
 
-        jump .chA01cont
+        jump CH5chA01cont
 
     "Suspicious! Yep, super suspicious!":
         scarecrow "ISN'T IT?"
 
-        jump .chA01cont
+        jump CH5chA01cont
 
-label .chA01cont:
+label CH5chA01cont:
     scarecrow "But what is the significance of these shoes...and why were they missing from the crime scene?"
 
-menu .chA02:
+menu chA02:
     "What will be your response?"
 
     "These shoes could be the reason why she died.":
@@ -80,14 +80,14 @@ menu .chA02:
             dorothy "The red shoes are a family heirloom."
             #IFFFF ---->>> If Dorothy listens in on the witch in ch4: She also mentioned them being a family heirloom.
         
-        jump .choice1
+        jump CH5choice1
 
     "Maybe they’re a red herring, haha get it?":
         scarecrow "That was horrible…(sniff) I’m so proud…"
 
-        jump .choice1
+        jump CH5choice1
 
-label .choiceB:
+label CH5choiceB:
 
     scarecrow "The lion said there was someone in a heated argument with the victim before the murder. They said...huh, I can’t remember."
 
@@ -122,9 +122,9 @@ label .choiceB:
 
     scarecrow "Anyway!"
 
-    jump .choice1
+    jump CH5choice1
 
-label .choiceC:
+label CH5choiceC:
     scarecrow "Ah, the camera found at the crime scene! The CLUE TO EVERYTHING!"
 
     dorothy "Is it?"
@@ -146,9 +146,9 @@ label .choiceC:
     else:
         scarecrow "That this camera probably doesn’t matter."
 
-    jump .choice1
+    jump CH5choice1
 
-label .choiceD:
+label CH5choiceD:
     scarecrow "This tape we got from the evidence room..."
 
     scarecrow "It was probably in the camera we found. Though I guess the tape doesn’t matter as much as what’s on it, doesn’t it?"
@@ -164,9 +164,9 @@ label .choiceD:
     else:
         dorothy "We need to find out what’s on that tape!"
 
-    jump .choice1
+    jump CH5choice1
 
-label .choiceE:
+label CH5choiceE:
     scarecrow "The note the Tin Man gave us...seemingly for free."
 
     dorothy "Yeah, that was weird."
@@ -178,9 +178,9 @@ label .choiceE:
 
     scarecrow "An admirable effort! But we’re definitely not doing that!"
 
-    jump .choice1
+    jump CH5choice1
 
-label .moveON:
+label CH5moveON:
 
     if doYouSuspectYourself:
         dorothy "..."
@@ -235,13 +235,12 @@ menu dorothychoice:
     "Your choice"
 
     "Say nothing.":
-        jump saynothing
+        jump CH5saynothing
 
     "Comfort Scarecrow.":
-        jump comfort
+        jump CH5comfort
 
-
-label saynothing:
+label CH5saynothing:
 
     dorothy "..."
 
@@ -265,10 +264,9 @@ label saynothing:
 
     dorothy "...I will"
 
-    jump bridgescene
+    jump CH5bridgescene
 
-
-label comfort:
+label CH5comfort:
     dorothy "You’re not stupid, you know."
 
     scarecrow "Thanks."
@@ -299,9 +297,7 @@ label comfort:
 
     dorothy "I will."
 
-    
-
-label bridgescene:
+label CH5bridgescene:
 
     "You stand outside at nighttime. You're crossing the London Bridge when you see a tall, dark figure in your path. The fog is too thick for you to see clearly."
 
@@ -319,12 +315,12 @@ label bridgescene:
 
 menu bridgescenedialogue:
     "...":
-        jump bridgescenecontinued
+        jump CH5bridgescenecontinued
 
     "Listen, I know I look super suspicious, but it wasn’t me, I swear-":
-        jump bridgescenecontinued
+        jump CH5bridgescenecontinued
 
-label bridgescenecontinued:
+label CH5bridgescenecontinued:
     wwwest "Don’t lie to me! It was you! My sister is dead because of you!"
 
     dorothy "With what proof?"
@@ -346,6 +342,7 @@ label bridgescenecontinued:
 
     scarecrow "{i}Oh.{\i}"
 
-    "FADE TO BLACK"
+    scene black
+    with dissolve
 
     jump chapter06
