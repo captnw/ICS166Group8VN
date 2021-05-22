@@ -54,8 +54,26 @@ image insideMunchkinBar = Placeholder("bg")
 image outsideMansion = Placeholder("bg")
 image insideMansion = Placeholder("bg")
 
-# The game starts here.
+# chapter 5
 
+
+# Runs python at initilization time, before the Game loads
+init python:
+    
+    # Evidence variables (what have you collected)
+    # AKA you and Scarecrow will discuss this
+    hasCollectedRedShoesPhoto = False
+    hasListenedToLionsTestimony = False
+    hasCollectedCamera = False
+    hasCollectedTape = False # undeveloped tape in evidence room, ch.2
+    hasCollectedTinManNote = False
+
+    # Misc variables (mainly used for dialogue in chapter 5)
+    hasListenedToWitchCh4 = False
+
+    doYouSuspectYourself = True # true until ...
+
+# The game starts here.
 label start:
 
     # outsideBigBen bg

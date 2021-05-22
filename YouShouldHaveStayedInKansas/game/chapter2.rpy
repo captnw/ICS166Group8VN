@@ -19,7 +19,7 @@ label chapter02:
     show dorothyPlaceholder
     with dissolve
 
-    dorothy "{i}whisper{/i} Look over there! There’s  the camera from the crime scene!"
+    dorothy "{i}whisper{/i} Look over there! There’s the camera from the crime scene!"
 
     hide dorothyPlaceholder
     show ScarecrowPlaceholder
@@ -71,6 +71,7 @@ label chapter02A:
     with dissolve
 
     "You both sneak into the interrogation room, and pick up the camera."
+    $ hasCollectedCamera = True
 
     dorothy "{i}holds up camera{/i} Perfect! Now the evidence is in our hands. Let’s get out of here."
 
@@ -81,6 +82,7 @@ label chapter02A:
     "While you were inspecting the camera, Scarecrow notices something on the Wiz's desk: a tape from the camera."
 
     "The Scarecrow takes it for himself without your knowledge."
+    $ hasCollectedTape = True
 
     hide ScarecrowPlaceholder at center
 
@@ -205,6 +207,7 @@ label chapter02B:
     hide ScarecrowPlaceholder
 
     "You both sneak into the interrogation room, and pick up the camera."
+    $ hasCollectedCamera = True
 
     show dorothyPlaceholder at center
     with dissolve
@@ -237,7 +240,7 @@ label chapter02B1:
     scarecrow "Thanks Dorothy!"
 
     # friendship points variable increase here or something
-    # some variable here
+    $ hasCollectedTape = True
 
     hide ScarecrowPlaceholder
 
@@ -316,6 +319,7 @@ label chapter02BA:
     hide tinmanPlaceholder
 
     "You and Scarecrow both look closely at the note, which reads: 'Bottom of heirloom hold down'"
+    $ hasCollectedTinManNote = True
 
     show dorothyPlaceholder
     with dissolve
@@ -459,6 +463,7 @@ label chapter02BB:
     hide tinmanPlaceholder
 
     "You and Scarecrow both look closely at the note, which reads: 'Bottom of heirloom hold down'"
+    $ hasCollectedTinManNote = True
 
     show dorothyPlaceholder at center
     with dissolve

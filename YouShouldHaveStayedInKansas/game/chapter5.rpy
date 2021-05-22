@@ -19,7 +19,7 @@ label chapter05:
 
     scarecrow "Good choice!"
 
-    "He grabs an old-looking chalkboard and writes EVIDENCE at the top"
+    "He grabs an old-looking chalkboard and writes {u}EVIDENCE{/u} at the top"
 
     scarecrow "So! What do we know?"
 
@@ -27,26 +27,23 @@ label choice1:
 menu evidenceMenu:
     "This menu depends on what you have managed to collect and what you haven’t. This will reappear until you decide to \"Move on\" from talking about the evidence."
 
-    "Pick Red Shoes":
+    "Pick photo of Red Shoes" if hasCollectedRedShoesPhoto:
         jump choiceA
 
-    "Pick Lion's Testimony":
+    "Pick Lion's Testimony" if hasListenedToLionsTestimony:
         jump choiceB
 
-    "Pick Camera":
+    "Pick Camera" if hasCollectedCamera:
         jump choiceC
 
-    "Pick Tape":
+    "Pick Tape" if hasCollectedTape:
         jump choiceD
 
-    "Pick Note":
+    "Pick Note" if hasCollectedTinManNote:
         jump choiceE
 
     "Move on":
         jump moveON
-
-
-
 
 label choiceA:
     scarecrow "Ah, the photo at the W.W. West's mansion! She seemed to have stolen it from the evidence room, suspicious, isn’t it?"
@@ -108,25 +105,18 @@ label chA02cont:
 
     jump choice1
 
-
-
-
-
-
-
 label choiceB:
 
     scarecrow "The lion said there was someone in a heated argument with the victim before the murder. They said...huh, I can’t remember."
 
-    #IFFFFFF-->>>(if red shoes picked up) They wanted the shoes
-    dorothy "They wanted the shoes."
+    if hasCollectedRedShoes:
+        dorothy "They wanted the shoes."
 
-    scarecrow "Right! The shoes from the photo! The ones missing from the crime scene!"
-    # ELSE -->>>(if red shoes are not picked up) Something about...shoes?
+        scarecrow "Right! The shoes from the photo! The ones missing from the crime scene!"
+    else:
+        dorothy "Something about...shoes?"
 
-    dorothy "Something about...shoes?"
-
-    scarecrow "Shoes...now why would that stranger say anything about shoes?"
+        scarecrow "Shoes...now why would that stranger say anything about shoes?"
 
     scarecrow "The Lion seemed very convinced that the one arguing with the witch before her death was the murderer. "
     
@@ -152,11 +142,6 @@ label choiceB:
 
     jump choice1
 
-
-
-
-
-
 label choiceC:
     scarecrow "Ah, the camera found at the crime scene! The CLUE TO EVERYTHING!"
 
@@ -174,17 +159,14 @@ label choiceC:
 
     scarecrow "I think…"
 
-    #IFFFFF---->>> (if Dorothy suspects herself) That this camera might be the murder weapon.
-    scarecrow "That this camera might be the murder weapon."
+    if doYouSuspectYourself:
+    
+        scarecrow "That this camera might be the murder weapon."
+    else:
 
-    #ELSEEE---->>> (if Dorothy knows she’s innocent) That this camera probably doesn’t matter.
-    scarecrow "That this camera probably doesn’t matter."
+        scarecrow "That this camera probably doesn’t matter."
 
     jump choice1
-
-
-
-
 
 label choiceD:
     scarecrow "This tape we got from the evidence room..."
@@ -197,14 +179,14 @@ label choiceD:
 
     scarecrow "It will take me tonight, so we’ll find out in the morning. I do hope it’s something relevant. I’m glad you found it, Dorothy."
 
-    #IFFFFF---->>> (if she thinks she’s the murderer) sure.
-    dorothy "sure."
+    if doYouSuspectYourself:
 
-    #ELSEEE---->>> (if she thinks she’s innocent) We need to find out what’s on that tape!
-    dorothy "We need to find out what’s on that tape!"
+        dorothy "sure."
+    else:
+
+        dorothy "We need to find out what’s on that tape!"
 
     jump choice1
-
 
 label choiceE:
     scarecrow "The note the Tin Man gave us...seemingly for free."
@@ -219,7 +201,6 @@ label choiceE:
     scarecrow "An admirable effort! But we’re definitely not doing that!"
 
     jump choice1
-
 
 label moveON:
     jump chapter06
