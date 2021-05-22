@@ -65,13 +65,13 @@ init python:
     hasCollectedRedShoesPhoto = False
     hasListenedToLionsTestimony = False
     hasCollectedCamera = False
-    hasCollectedTape = False # undeveloped tape in evidence room, ch.2
+    didYouGiveScarecrowTape = False # undeveloped tape in evidence room, ch.2
     hasCollectedTinManNote = False
 
     # Misc variables (mainly used for dialogue in chapter 5)
-    hasListenedToWitchCh4 = False
-
-    doYouSuspectYourself = True # true until ...
+    hasListenedInOnWitchCh4 = False # eavesdropped on Witch's and Tinman's conversation
+    hasCh4Happened = False # did you go to ch4
+    doYouSuspectYourself = True # true until you've listened to the lion's testimony
 
 # The game starts here.
 label start:

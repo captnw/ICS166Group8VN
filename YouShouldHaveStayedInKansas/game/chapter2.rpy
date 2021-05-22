@@ -1,6 +1,5 @@
 ﻿# Chapter 2
 
-# transcribed as of 5/17/2021, soon to be changed due to script reasons
 define popo = Character("Police Officer", color="#FFFFFF") 
 
 label chapter02:
@@ -82,7 +81,6 @@ label chapter02A:
     "While you were inspecting the camera, Scarecrow notices something on the Wiz's desk: a tape from the camera."
 
     "The Scarecrow takes it for himself without your knowledge."
-    $ hasCollectedTape = True
 
     hide ScarecrowPlaceholder at center
 
@@ -239,8 +237,7 @@ label chapter02B1:
 
     scarecrow "Thanks Dorothy!"
 
-    # friendship points variable increase here or something
-    $ hasCollectedTape = True
+    $ didYouGiveScarecrowTape = True
 
     hide ScarecrowPlaceholder
 

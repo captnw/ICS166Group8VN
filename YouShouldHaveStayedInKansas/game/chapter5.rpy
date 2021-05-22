@@ -36,7 +36,7 @@ menu evidenceMenu:
     "Pick Camera" if hasCollectedCamera:
         jump CH5choiceC
 
-    "Pick Tape" if hasCollectedTape:
+    "Pick Tape" if didYouGiveScarecrowTape:
         jump CH5choiceD
 
     "Pick Note" if hasCollectedTinManNote:
@@ -77,8 +77,7 @@ menu chA02:
         scarecrow "{i}sounding delighted{\i} How morbid!"
 
         if hasListenedInOnWitchCh4:
-            dorothy "The red shoes are a family heirloom."
-            #IFFFF ---->>> If Dorothy listens in on the witch in ch4: She also mentioned them being a family heirloom.
+            dorothy "The shoes are also a family heirloom."
         
         jump CH5choice1
 
@@ -171,8 +170,7 @@ label CH5choiceE:
 
     dorothy "Yeah, that was weird."
 
-    #I did not insert the word in the note yet
-    scarecrow "Anyway! It said something about (insert the words the note contains). The handwriting might give away the author."
+    scarecrow "Anyway! It said something like 'bottom, heirloom, hold down'. The handwriting might give away the author."
 
     dorothy "I mean...what are we gonna do, ask everyone in London to write their names?"
 
@@ -285,7 +283,10 @@ label CH5comfort:
 
     scarecrow "Maybe I'm not brainless after all."
 
-    scarecrow "I think this story is all coming together. I just need...another night. (if dorothy gives him the tape) plus we need to develop that tape. Give me until tomorrow morning, all right?"
+    scarecrow "I think this story is all coming together. I just need...another night."
+    
+    if didYouGiveScarecrowTape:
+        scarecrow "...plus we need to develop that tape. Give me until tomorrow morning, all right?"
 
     dorothy "Sure. I should be getting home anyway."
 
@@ -306,6 +307,13 @@ label CH5bridgescene:
     wwwest "You."
 
     "W. W. West steps out of the fog. She looks like she hasn’t slept in days. Her face is full of contempt and suspicion."
+
+    if hasCh4Happened:
+        wwwest "I know you were stalking my house."
+    else:
+        wwwest "I’ve seen you before"
+
+    dorothy "I..."
 
     wwwest "I know you wanted to take something from me."
 
@@ -336,8 +344,10 @@ label CH5bridgescenecontinued:
     dorothy "{i}muttering{\i} 'Be safe, Dorothy', what a dumb thing to promise."
 
     "Back at Scarecrow’s place, the wannabe detective is cooking up some polaroids." 
-    #Depending on if Dorothy gives him the tape or not, there will be one hanging at his side, drying. 
-    
+
+    if didYouGiveScarecrowTape:
+        "There is one polaroid hanging at Scarecrow's side, drying."
+
     "He picks the polaroid and brings it to his eyes. He can just make out what it’s depicting. His eyes widen."
 
     scarecrow "{i}Oh.{\i}"

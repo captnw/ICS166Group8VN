@@ -728,7 +728,8 @@ label chapter03AAContinued:
 
     lion "… Thank you for listening to my story. I really do appreciate it."
     $ hasListenedToLionsTestimony = True
-
+    $ doYouSuspectYourself = False
+    
     lion "While the information I gave you may not be that helpful, why don’t you try stopping by the Wicked Witch of the West’s mansion and asking her some questions, maybe she’ll know more about what happened on that day."
 
     hide lionPlaceholder

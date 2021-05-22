@@ -16,6 +16,7 @@ image randomStreet = Placeholder("bg")
 label chapter04:
     
     "Chapter 4: W. W. WEST'S MANSION"
+    $ hasCh4Happened = True
 
     # outsideMansion bg
     scene outsideMansion
