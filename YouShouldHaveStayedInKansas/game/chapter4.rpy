@@ -254,6 +254,8 @@ label chapter04AAB:
     show wwwestPlaceholder at right 
     with dissolve 
 
+    $ hasListenedInOnWitchCh4 = True
+
     tinman "I'm also sorry about the love- uh I mean forensic letters, I suppose we sent those out a bit too early."
 
     wwwest "Yea, you think? Anyway, did you guys find her shoes yet? Those were a very important family heirloom."
@@ -313,6 +315,7 @@ label chapter04AAC:
     dorothy "{b}WHAT?{/b}"
 
     scarecrow "{i}Chuckling{/i} I’m kidding, I’m kidding. I found this developed film, it has a picture of some really pretty red shoes on it. I think the film came from the same camera from the police station actually."
+    $ hasCollectedRedShoesPhoto = True
 
     scarecrow "Seems to be from the scene of the crime, or something, and if you look closely at it seems there’s a secret compartment in the shoes, there’s something shiny peeking out."
 

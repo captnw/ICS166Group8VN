@@ -39,6 +39,11 @@ image crimeScene = Placeholder("bg")
 
 image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
 
+# chapter2
+image outsidePoliceStation = Placeholder("bg")
+
+image RandomPoliceOfficer = Placeholder("girl")
+
 # chapter 3
 image bartenderPlaceholder = Placeholder("boy")
 
@@ -49,8 +54,26 @@ image insideMunchkinBar = Placeholder("bg")
 image outsideMansion = Placeholder("bg")
 image insideMansion = Placeholder("bg")
 
-# The game starts here.
+# chapter 5
 
+
+# Runs python at initilization time, before the Game loads
+init python:
+    
+    # Evidence variables (what have you collected)
+    # AKA you and Scarecrow will discuss this
+    hasCollectedRedShoesPhoto = False
+    hasListenedToLionsTestimony = False
+    hasCollectedCamera = False
+    hasCollectedTape = False # undeveloped tape in evidence room, ch.2
+    hasCollectedTinManNote = False
+
+    # Misc variables (mainly used for dialogue in chapter 5)
+    hasListenedInOnWitchCh4 = False # eavesdropped on Witch's and Tinman's conversation
+
+    doYouSuspectYourself = True # true until ...
+
+# The game starts here.
 label start:
 
     # outsideBigBen bg
