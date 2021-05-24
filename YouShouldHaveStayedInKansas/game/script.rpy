@@ -257,7 +257,7 @@ label chapter00Result2:
 
     dorothy "Hmm..."
 
-    "You can't be sure how the photo turned out until you spend time to develop them.
+    "You can't be sure how the photo will turn out until you spend time to develop it.
     Just by observing the cityscape, you notice one potential problem..."
 
     dorothy "Aw... it's overcast again..."
