@@ -9,7 +9,10 @@ define tinman = Character("Tin Man", color="#99cc00")
 define lion = Character("Lion", color="#ffcc00")
 define wwwest = Character("W. W. West", color="#ffcc00")
 define wiz = Character("The Wiz", color="#ffcc00")
+
 define stranger = Character("Stranger", color="#888888")
+define policeman1 = Character("Policeman 1", color="#0000ff")
+define policeman2 = Character("Policeman 2", color="#0000ff")
 
 # placeholder character portraits
 image ScarecrowPlaceholder = Placeholder("boy")
@@ -25,6 +28,9 @@ image FemaleStranger = Placeholder("girl")
 
 image randomStreet = Placeholder("bg")
 image policeQuestioningRoom = Placeholder("bg")
+
+image policeman1Placeholder = Placeholder("boy")
+image policeman2Placeholder = Placeholder("boy")
 
 # prologue 
 image outsideBigBen = "london street.jpg"
@@ -57,6 +63,9 @@ image insideMansion = Placeholder("bg")
 # chapter 5
 image scarecrowApartment = Placeholder("bg")
 image londonBridge = Placeholder("bg")
+
+# chapter 6
+image dorothysApartment = Placeholder("bg")
 
 # Runs python at initilization time, before the Game loads
 init python:
