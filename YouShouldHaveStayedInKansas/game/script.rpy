@@ -107,7 +107,7 @@ label start:
 
     dorothy "Beautiful day, isn’t it?!"
 
-    "You can’t help but notice how lion-like the janitor looks with his scruffy, red-orange hair."
+    "You can’t help but notice how lion-like the janitor looks with his scruffy, mane-like hair."
 
     dorothy "Good day, officers!"
 
