@@ -122,7 +122,7 @@ label start:
     # wiz portrait show 
     show wizPlaceholder at center
 
-    wiz "Good day young lady! Where are you off to?"
+    wiz "GOOD DAY YOUNG LADY!  WHERE ARE YOU OFF TO?"
 
     hide wizPlaceholder
 
