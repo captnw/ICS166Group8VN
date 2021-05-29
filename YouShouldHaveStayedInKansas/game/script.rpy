@@ -34,7 +34,7 @@ image policeman2Placeholder = Placeholder("boy")
 
 # prologue 
 image outsideBigBen = "london street.jpg"
-image insideBigBen = Placeholder("bg")
+image insideBigBen = "big ben interior.jpg"
 
 image londonPhoto1 = "london photo bridge.jpg"
 image londonPhoto2 = "london photo bridge.jpg"
@@ -86,6 +86,9 @@ init python:
 # The game starts here.
 label start:
 
+    # TEMP: FOR TESTING CHAPTER 6
+    jump chapter06
+
     # outsideBigBen bg
     scene outsideBigBen :
         zoom 1.5
@@ -129,11 +132,11 @@ label start:
 
     hide tinmanPlaceholder
     # wiz portrait show 
-    show wizPlaceholder at center
+    show wizBlurred at center
 
     wiz "GOOD DAY YOUNG LADY!  WHERE ARE YOU OFF TO?"
 
-    hide wizPlaceholder
+    hide wizBlurred
 
     show dorothyPlaceholder at right
 
