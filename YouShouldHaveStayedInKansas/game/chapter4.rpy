@@ -8,11 +8,6 @@ image scarecrowPlaceholder = Placeholder("boy")
 image dorothyPlaceholder = Placeholder("girl")
 image tinmanPlaceholder = Placeholder("boy")
 
-# placeholder bg
-image outsideMansion = Placeholder("bg")
-image insideMansion = Placeholder("bg")
-image randomStreet = Placeholder("bg")
-
 label chapter04:
     
     "Chapter 4: W. W. WEST'S MANSION"

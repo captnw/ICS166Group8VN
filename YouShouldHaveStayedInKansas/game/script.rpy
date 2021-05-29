@@ -33,39 +33,41 @@ image policeman1Placeholder = Placeholder("boy")
 image policeman2Placeholder = Placeholder("boy")
 
 # prologue 
-image outsideBigBen = "london street.jpg"
-image insideBigBen = "big ben interior.jpg"
+image outsideBigBen = "londonStreet.jpg"
+image insideBigBen = "bigBenInterior.jpg"
 
-image londonPhoto1 = "london photo bridge.jpg"
-image londonPhoto2 = "london photo bridge.jpg"
-image londonPhoto3 = "london photo bridge.jpg"
+image londonPhoto1 = "londonPhoto.jpg"
+image londonPhoto2 = "londonPhotoBridge.jpg"
+image londonPhoto3 = "londonPhotoBridge.jpg"
+
+image randomStreet = "londonStreet.jpg"
 
 # chapter 1
-image crimeScene = Placeholder("bg")
+image crimeScene = "allyWay.jpg"
 
 image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
 
 # chapter2
-image outsidePoliceStation = Placeholder("bg")
+image outsidePoliceStation = "londonStreet.jpg"
 
 image RandomPoliceOfficer = Placeholder("girl")
 
 # chapter 3
 image bartenderPlaceholder = Placeholder("boy")
 
-image outsideMunchkinBar = Placeholder("bg")
-image insideMunchkinBar = Placeholder("bg")
+image outsideMunchkinBar = "londonStreet.jpg"
+image insideMunchkinBar = "bar.jpg"
 
 # chapter 4
-image outsideMansion = Placeholder("bg")
-image insideMansion = Placeholder("bg")
+image outsideMansion = "mansionOutside.jpg"
+image insideMansion = "mansionInside.jpg"
 
 # chapter 5
-image scarecrowApartment = Placeholder("bg")
-image londonBridge = Placeholder("bg")
+image scarecrowApartment = "apartment.jpg"
+image londonBridge = "londonBridgePhoto.jpg""
 
 # chapter 6
-image dorothysApartment = Placeholder("bg")
+image dorothysApartment = "apartment2.jpg"
 
 # Runs python at initilization time, before the Game loads
 init python:
