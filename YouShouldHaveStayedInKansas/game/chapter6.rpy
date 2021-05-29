@@ -34,5 +34,5 @@ menu chapter6Choice1:
         jump chapter6Result1
 
 label chapter6Result1:
-
+    
     jump end
