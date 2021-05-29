@@ -14,7 +14,8 @@ label chapter04:
     $ hasCh4Happened = True
 
     # outsideMansion bg
-    scene outsideMansion
+    scene outsideMansion at truecenter :
+        zoom 1.55
     with fade
 
     # scarecrow portrait show
@@ -148,7 +149,8 @@ label chapter04AA:
     "Scarecrow and Dorothy dash into the house with Tin Man trailing behind, W.W. West walks in behind them shaking her head."
 
     # insideMansion bg
-    scene insideMansion
+    scene insideMansion at truecenter :
+        zoom 1.6
     with fade
 
     show wwwestPlaceholder at center 
@@ -291,7 +293,8 @@ label chapter04AAC:
     "Dorothy and Scarecrow run out the front door and get away"
 
     # randomStreet bg
-    scene randomStreet
+    scene randomStreet at truecenter :
+        zoom 1.5
     with fade
 
     show dorothyPlaceholder at left

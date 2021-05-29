@@ -131,7 +131,8 @@ label chp01Choice02Cont:
 
     "You watch as Scarecrow walks away with his head down and decide to follow him in order to try and cheer him up because you want to help him feel better."
 
-    scene randomStreet
+    scene randomStreet :
+        zoom 1.5
     show ScarecrowPlaceholder at right
     show dorothyPlaceholder at left
     with fade
@@ -196,7 +197,8 @@ label chp01Choice02Cont:
 
     scarecrow "Oh I get ya, let’s head over there now."
 
-    scene policeQuestioningRoom  #transition to the police questioning room
+    scene policeQuestioningRoom :  #transition to the police questioning room
+        zoom 1.5
     with fade
 
     "The WW West is in a questioning room. She is being questioned by the Lead Investigator aka “The Wiz” and a forensic officer Tin Man."

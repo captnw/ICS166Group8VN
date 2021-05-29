@@ -6,7 +6,8 @@ label chapter02:
 
     "CHAPTER 2: SNEAKING INTO THE POLICE STATION"
 
-    scene policeStation
+    scene policeStation at truecenter:
+        zoom 1.6
     with fade
 
     "You and Scarecrow have just successfully snuck into the police station."
@@ -41,7 +42,8 @@ menu chapter02Choice:
 
 label chapter02A:
 
-    scene policeQuestioningRoom
+    scene policeQuestioningRoom :
+        zoom 1.5
     show wizPlaceholder
     with fade
 
@@ -88,7 +90,8 @@ label chapter02A:
 
 label chapter02B:
 
-    scene policeQuestioningRoom
+    scene policeQuestioningRoom :
+        zoom 1.5
     with fade
 
     show wizPlaceholder at center
@@ -277,7 +280,8 @@ label chapter02B2:
 
 label chapter02MainPath:
 
-    scene policeStation
+    scene policeStation at truecenter:
+        zoom 1.6
     with fade
 
     "Just as Dorothy and Scarecrow are about to leave, the Wiz's partner from earlier walked in"
@@ -373,7 +377,8 @@ label chapter02BA:
 
     "You and Scarecrow leave the police station."
 
-    scene outsidePoliceStation
+    scene outsidePoliceStation :
+        zoom 1.5
 
     show dorothyPlaceholder at center
     with dissolve

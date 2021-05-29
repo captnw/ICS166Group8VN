@@ -9,7 +9,8 @@ label chapter03:
     "CHAPTER 3: AT THE BAR"
 
     # street bg here, fade in
-    scene randomStreet
+    scene randomStreet2 at truecenter :
+        zoom 1.5
     with fade
 
     "You find yourselves on a busy, well-lit street. It begins to rain softly."
@@ -47,7 +48,8 @@ label chapter03:
 
     dorothy "Lead the way."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     with fade
 
     "You've stepped inside the bar to find out that despite being open, the bar seemed almost empty. The tables are all laid out, the room is well-lit, and there is a bartender cleaning glassware in the corner of the room."
@@ -67,7 +69,8 @@ label chapter03:
 
     dorothy "I guess I’ll order something as well … wait do you see that bartender?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder
     with dissolve
 
@@ -75,7 +78,8 @@ label chapter03:
 
     dorothy "Yeah, he was at the crime scene that other day."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     show ScarecrowPlaceholder at right
     with dissolve
@@ -86,7 +90,8 @@ label chapter03:
 
     scarecrow "Let’s go up to him and ask some questions about what happened."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder
     with dissolve
 
@@ -101,7 +106,8 @@ menu chapter03Choice:
 
 label chapter03B:
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     show dorothyPlaceholder at center
     show bartenderPlaceholder at right
@@ -109,13 +115,15 @@ label chapter03B:
 
     "You and Scarecrow walked up to the bartender, who is currently occupied with cleaning glassware"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Excuse me, can I ask you a question?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
@@ -125,13 +133,15 @@ label chapter03B:
 
     bartender "can i help you with something?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Hi, where were you when the Wicked Witch of the East die-"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     with dissolve
 
@@ -139,7 +149,8 @@ label chapter03B:
 
     dorothy "I think what my friend here was trying to say is that we’re independent detectives employed by the Wicked Witch of the West to find out about the circumstances about her sister’s death."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
@@ -147,37 +158,43 @@ label chapter03B:
 
     scarecrow "Right, and we were informed by various sources that you may have been around the scene when it occurred, so could you please tell us what happened on that night?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "i’ve already explained what i know to the local police department, can’t you just ask them for my account?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Uh … they’re currently busy at the moment, this type of information would be vital for-"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "i’ve told you, i’ve already explained it to some other people, i-"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     with dissolve
 
     dorothy "Look here mister, if you don’t want any trouble, just say what you know and we’ll both go on our merry ways. "
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "(whispering) i forgot, i’m sorry, i tend to forget things when it all seems to be really intense, like right now!"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     with dissolve
 
@@ -185,13 +202,15 @@ label chapter03B:
 
     "You flip over a table and kick over a chair to indimidate the bartender further."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Dorothy, what are you doing!?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     with dissolve
 
@@ -199,37 +218,43 @@ label chapter03B:
 
     dorothy "Still don’t remember, huh?"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "i’m sorry, i’m sorRY, i’m..i-i’m...I’M-"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     with dissolve
 
     dorothy "Maybe you need some encouragement, if you don’t spill the beans I’m going to kick you in the -"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "I'M ... REALLY PISSED OFF."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show dorothyPlaceholder at left
     with dissolve
 
     dorothy "Wha-"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "YOU COME INTO MY SHOP. I TREAT YOU POLITELY AND THEN YOU ASK TOO MANY QUESTIONS ABOUT SOMETHING I DON'T WANT TO TALK ABOUT AND THEN YOU BREAK MY FURNITURE." 
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
@@ -237,19 +262,22 @@ label chapter03B:
 
     "The bartender quickly puts the mug down and slams his hands on the counter"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
     bartender "YOU BUFFOONS NEED TO GET OUT OF MY SHOP, RIGHT NOW."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Wait before we go … could I order some fish and chips."
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show bartenderPlaceholder at right
     with dissolve
 
@@ -257,12 +285,14 @@ label chapter03B:
 
     "You and Scarecrow left the store immediately just as the bartender was climbing over the counter"
 
-    scene outsideMunchkinBar
+    scene outsideMunchkinBar at truecenter :
+        zoom 1.5
     with fade
 
     "You both run until the store is out of view."
 
-    scene randomStreet
+    scene randomStreet2 at truecenter :
+        zoom 1.5
     with fade
 
     show ScarecrowPlaceholder at center
@@ -326,7 +356,8 @@ label chapter03A:
 
     bartender "Coming right up!"
 
-    scene insideMunchkinBar
+    scene insideMunchkinBar at truecenter :
+        zoom 1.8
     show ScarecrowPlaceholder at left
     show dorothyPlaceholder at center
     show bartenderPlaceholder at right
@@ -548,12 +579,14 @@ label chapter03AB:
 
     "Dorthy grabs Scarecrow and they both run out of the store."
 
-    scene outsideMunchkinBar
+    scene outsideMunchkinBar at truecenter :
+        zoom 1.5
     with fade
 
     "You both run until the store is out of view."
 
-    scene randomStreet
+    scene randomStreet2 at truecenter :
+        zoom 1.5
     with fade
 
     show ScarecrowPlaceholder at center
@@ -774,7 +807,8 @@ label chapter03AAContinued:
 
     "You and Scarecrow walk out of the bar."
 
-    scene outsideMunchkinBar
+    scene outsideMunchkinBar at truecenter :
+        zoom 1.5
     with fade
 
     show ScarecrowPlaceholder at left

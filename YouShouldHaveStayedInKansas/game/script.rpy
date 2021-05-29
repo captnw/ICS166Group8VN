@@ -26,48 +26,52 @@ image wwWestPlaceholder = Placeholder("girl")
 image MaleStranger = Placeholder("boy")
 image FemaleStranger = Placeholder("girl")
 
-image randomStreet = Placeholder("bg")
-image policeQuestioningRoom = Placeholder("bg")
+image randomStreet = im.Blur("londonStreet.jpg" ,0.5)
+image randomStreet2 = im.Blur("londonStreetWellLit.jpg" ,0.5)
+image randomStreet3 = im.Blur("londonStreetDark.jpg" ,0.5)
+
+image policeQuestioningRoom = im.Blur("interrogation1.jpg" ,0.5)
+
+image policeStation = im.Blur("policeStation.jpg" ,0.5)
 
 image policeman1Placeholder = Placeholder("boy")
 image policeman2Placeholder = Placeholder("boy")
 
 # prologue 
-image outsideBigBen = "londonStreet.jpg"
-image insideBigBen = "bigBenInterior.jpg"
+image outsideBigBen = im.Blur("londonStreet.jpg" ,0.5)
 
-image londonPhoto1 = "londonPhoto.jpg"
-image londonPhoto2 = "londonPhotoBridge.jpg"
-image londonPhoto3 = "londonPhotoBridge.jpg"
+image insideBigBen = im.Blur(im.FactorScale("bigBenInterior.jpg", 2.8, 1), 0.5) 
 
-image randomStreet = "londonStreet.jpg"
+image londonPhoto1 = im.Blur("londonPhoto.jpg" ,0.1)
+image londonPhoto2 = im.Blur("londonPhotoBridge.jpg" ,0.1)
+image londonPhoto3 = im.Blur("londonPhotoBridge.jpg" ,0.1)
 
 # chapter 1
-image crimeScene = "allyWay.jpg"
+image crimeScene = im.Blur("allyWay.jpg", 0.1)
 
 image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
 
 # chapter2
-image outsidePoliceStation = "londonStreet.jpg"
+image outsidePoliceStation = im.Blur("londonStreet.jpg" ,0.5)
 
 image RandomPoliceOfficer = Placeholder("girl")
 
 # chapter 3
 image bartenderPlaceholder = Placeholder("boy")
 
-image outsideMunchkinBar = "londonStreet.jpg"
-image insideMunchkinBar = "bar.jpg"
+image outsideMunchkinBar = im.Blur("londonStreetWellLit.jpg" ,0.5)
+image insideMunchkinBar = im.Blur("bar.jpg" ,0.5)
 
 # chapter 4
-image outsideMansion = "mansionOutside.jpg"
-image insideMansion = "mansionInside.jpg"
+image outsideMansion = im.Blur("mansionOutside.jpg" ,0.5)
+image insideMansion = im.Blur("mansionInside.jpg" ,0.5)
 
 # chapter 5
-image scarecrowApartment = "apartment.jpg"
-image londonBridge = "londonBridgePhoto.jpg""
+image scarecrowApartment = im.Blur("apartment.jpg" ,0.5)
+image londonBridge = im.Blur(im.Grayscale("londonBridgeNight.jpg"), 0.5)
 
 # chapter 6
-image dorothysApartment = "apartment2.jpg"
+image dorothysApartment = im.Blur("apartment2.jpg" ,0.5)
 
 # Runs python at initilization time, before the Game loads
 init python:
@@ -87,9 +91,6 @@ init python:
 
 # The game starts here.
 label start:
-
-    # TEMP: FOR TESTING CHAPTER 6
-    jump chapter06
 
     # outsideBigBen bg
     scene outsideBigBen :
@@ -220,7 +221,8 @@ label chapter00D:
     You are quite proud of the shoes you are wearing and you don’t care who knows it!"
     hide dorothyPlaceholder
 
-    scene insideBigBen
+    scene black
+    show insideBigBen
     with fade
 
     show dorothyPlaceholder
@@ -281,9 +283,11 @@ label chapter00Result2:
 
     dorothy "Maybe if I wait a moment, the sun will come back out!"
 
-    scene insideBigBen with fade
+    scene black
+    show insideBigBen
     show dorothyPlaceholder
-
+    with fade
+    
     "You're staring intently at the place in the sky where the sun is still hidden..."
 
     dorothy "Any second now..."

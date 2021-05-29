@@ -2,8 +2,10 @@
 
 label chapter06:
 
-    scene dorothysApartment with fade
+    scene dorothysApartment at truecenter :
+        zoom 1.5
     show dorothyPlaceholder at center
+    with fade
 
     "It’s morning and you find yourself being woken up 
     by loud banging on your door. 
