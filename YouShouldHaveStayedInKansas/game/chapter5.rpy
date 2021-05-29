@@ -713,6 +713,50 @@ label CH5bridgescenecontinued:
 
     scarecrow "{i}Oh.{\i}"
 
+    if (didYouGiveScarecrowTape) and (hasCollectedRedShoesPhoto) and (hasListenedToLionsTestimony) and (hasCollectedCamera) and (hasCollectedTinManNote):
+       
+        scene black
+        with dissolve
+
+        show ScarecrowPlaceholder at right
+        with dissolve
+
+        "Scarecrow picks up his phone and dials Dorothy's number."
+
+        scarecrow "Dorothy! I have some new important evidence!"
+
+        show dorothyPlaceholder at left
+        with dissolve
+
+        dorothy "What, what do you mean, it's 2 A. M. can't you call me later?"
+
+        scarecrow "That photo you gave me, I developed it and it shows someone pushing W. W. West's sister over at the scene of the crime!"
+
+        dorothy "So it wasn't me!"
+
+        scarecrow "Wait, what?"
+
+        dorothy "Oh uh, nothing, can you make out their face?"
+
+        scarecrow "No, not really."
+
+        dorothy "(Hm, wait, the shoes, the note, and now this? The note, “bottom, heirloom, hold down.”, W. W. West called the shoes a family heirloom, and there was obviously something hidden in the bottom of them.)"
+
+        dorothy "(The Wiz seemed very keen on knowing their location, in fact only him and W. W. West even ever mentioned them. It must be one of them, the shoes are the motive! Surely whoever wrote the note is behind the crime. Surely...)"
+
+        scarecrow "Hey? Dorothy? You still there?"
+
+        dorothy "What? Oh yea, okay thanks for the info! We can talk tomorrow!"
+
+        scarecrow "Oh, yea okay sur-"
+
+        "Dorothy hangs up the phone."
+
+        hide ScarecrowPlaceholder 
+        with dissolve
+
+        dorothy "If I can just figure out who wrote that note, then surely..."
+
     scene black
     with dissolve
 
