@@ -159,7 +159,7 @@ label CH5choiceB:
 
     scarecrow "The lion said there was someone in a heated argument with the victim before the murder. They said...huh, I can’t remember."
 
-    if hasCollectedRedShoes:
+    if hasCollectedRedShoesPhoto:
         hide ScarecrowPlaceholder
         show dorothyPlaceholder at center
         with dissolve
