@@ -2,16 +2,15 @@
 
 label chapter06:
 
-    scene dorothysApartment at truecenter :
+    scene dorothysApartment at truecenter with fade :
         zoom 1.5
     show dorothyPlaceholder at center
-    with fade
 
     "It’s morning and you find yourself being woken up 
     by loud banging on your door. 
     You go to check it out and find two police men waiting by the door."
 
-    show policeman1Placeholder at left
+    show policeman1Placeholder at left with dissolve
 
     policeman1 "Morning"
 
@@ -22,8 +21,8 @@ label chapter06:
 
     dorothy "What's this about?"
 
-    hide policeman1Placeholder
-    show policeman2Placeholder at left
+    hide policeman1Placeholder with dissolve
+    show policeman2Placeholder at left with dissolve
 
     policeman2 "We just need you to come with us.
     We can do this the easy way or the hard way.
@@ -34,7 +33,7 @@ label chapter06:
 menu chapter6Choice1:
 
     "Slam the door in their faces":
-        show policeman2Placeholder at left
+        show policeman2Placeholder at left with dissolve
 
         "You try to close the door quickly but the closer policeman 
         holds the door open as if he knew what you were thinking"
@@ -47,8 +46,6 @@ menu chapter6Choice1:
         jump chapter6Result1
 
 label chapter6Result1:
-    
-    hide policeman2Placeholder
 
     dorothy "Alright, alright, let's go"
 
@@ -86,7 +83,7 @@ label chapter6Result1:
 
     dorothy "Can we get this over with already?"
 
-    show wizPlaceholder at left
+    show wizPlaceholder at left with dissolve
     
     wiz "HEY KIDDO, HOW ARE YOU DOING?"
 
@@ -108,6 +105,7 @@ label chapter6Result1:
     AND YOU’RE NOT EVEN GOING TO TRY AND DEFEND YOURSELF?"
 
 menu chapter06Choice1:
+    # IS THIS CORRECT?
     "I don’t think I’m the one that should be defending myself" if hasCollectedRedShoesPhoto and hasListenedToLionsTestimony and hasCollectedCamera and didYouGiveScarecrowTape and hasCollectedTinManNote and hasListenedInOnWitchCh4 and hasCh4Happened and not doYouSuspectYourself:
          jump chapter06Result1_1
 
@@ -146,7 +144,7 @@ label chapter06Result1_1:
 
     dorothy "And isn’t the handwriting on that note, your writing?"
 
-    wiz "EVEN IF IT IS *puts away the document in front of him*, 
+    wiz "EVEN IF IT IS {i}puts away the document{/i} in front of him*, 
     I’M NOT SURE WHERE YOU’RE GOING WITH THIS."
 
     dorothy "It’s the instructions to open the secret compartment 
@@ -231,6 +229,74 @@ menu chapter06Choice1_1:
         jump chapter06Choice1_1_2
 
 label chapter06Choice1_1_1:
+    dorothy "Alright"
+
+    wiz "so what's it going to be?"
+
+    dorothy "I will go along with your plan for the money"
+
+    # IS THIS CORRECT?
+    if didYouGiveScarecrowTape:
+        dorothy "But you have to give scarecrow a chance at the academy"
+
+        wiz "why do you bother with him?? he can’t do anything right."
+
+        dorothy "That's just because you never gave him a chance, 
+        but he is extremely smart and has amazing instincts"
+
+        wiz "very well, i will do as you say"
+
+    wiz "so remember you will have the money once that woman is in jail."
+
+    dorothy "Fine"
+
+    wiz "{i}sinisterly{/i} GOOD"
+
+    scene black with fade
+
+    "Couple days later you hear the witch goes to jail, 
+    but that there was an accomplice with her 
+    and that the police are still tracking them down."
+
+    "You find that very weird, but decide not to worry about it 
+    and just think about what you will do with the money you will get."
+
+    scene dorothysApartment at truecenter with fade :
+        zoom 1.5
+    show dorothyPlaceholder
+
+    "You hear knocking at your door 
+    and when you open it you are grabbed by the police."
+
+    show policeman1Placeholder at left with dissolve
+
+    policeman1 "You are being taken on to custody for the murder of W.W. WEST"
+
+    dorothy "{i}frantically{/i} I don’t understand!! I didn’t do anything!!"
+
+    policeman1 "Yeah sure save it for the judge!!"
+
+    scene outsidePoliceStation at truecenter :
+        zoom 1.5
+    show dorothyPlaceholder at left with dissolve
+    show wizPlaceholder at right with dissolve
+
+    "As you are being taken to the police car, 
+    you see the Wizard smiling sinisterly towards you and walking away."
+
+    dorothy "Nooooo! It wasn’t me!! 
+    It was the Wizard!! Wait! You have to believe ME!!"
+
+    "But no one listened. 
+    All you got were cold stares as you were being taken in."
+
+    scene black with fade
+
+    "You and the Wicked Witch of the West were tried 
+    for the murder of the Wicked Witch of the East. 
+    You were both found guilty and sentenced to 20-30 years in prison."
+
+    "BAD END - FOOLED BY THE MONEY"
 
 label chapter06Choice1_1_2:
 
