@@ -450,6 +450,111 @@ label chapter06Result1_3:
     jump chapter06PathB
 
 label chapter06PathB:
-    
+    wiz "I THINK YOU MIGHT BE INVOLVED IN THE MURDER OF A WICKED WITCH OF THE WEST."
+
+    dorothy "Really? And how are you going to prove it?"
+
+    wiz "TAKE A NICE GLIMPSE OF THIS PHOTO."
+
+    "The photo is your selfie."
+
+    dorothy "You're gonna have to do better than that?"
+
+    wiz "DID YOU KNOW WHERE THAT SELFIE CAME FROM? YOUR CAMERA/ THE SAME CAMERA THAT WAS USED AS THE MURDER WEAPON."
+
+    dorothy "Hmph."
+
+    wiz "SO WHY DID YOU DO IT?"
+
+    dorothy "I... I din't do it."
+
+    wiz "THE EVIDENCE SAYS OTHERWISE. WHY ARE YOU MAKING THIS SO HARD FOR YOURSELF?"
+
+    wiz "IF YOU ADMIT THAT YOU DID IT AND COOPERATE WITH US, YOU MAY RECEIVE A LIGHTER SENTENCE."
+
+menu chapter06Choice2:
+    "Say nothing":
+        jump chapter06Choice2_1
+
+    "Try and kill the wizard":
+        jump chapter06Choice2_2
+
+label chapter06Choice2_1:
+    dorothy "I'm not cooperating with you."
+
+    wiz "SEE YOU IN COURT, IDIOT."
+
+    scene black with fade
+
+    "Despite fighting earnestly, the courts were rigged in the Wizard's favor. You and the Wicked Witch of the West were tried for the murder of the Wicked Witch of the East. You were both found guilty and sentenced to 20-30 years in prison."
+
+    "BAD END - WRONGLY IMPRISONED"
+
+    jump end
+
+label chapter06Choice2_2:
+    dorothy "But I didn't do anything."
+
+    "The Wizard gets right in front of your face and you can see the madness in his eyes."
+
+    wiz "STILL TRYING TO ACT INNOCENT ARE YOU??!"
+
+    dorothy "{i}low voice{\i} I am innocent."
+
+    wiz "WHAT WAS THAT??? SPEAK UP!!"
+
+    dorothy "{i}shouting{\i} I AM INNOCENT!!"
+
+    wiz "SO YOU SAY BUT EVERYTHING POINTS TO YOU!!"
+
+    dorothy "NOOO!!"
+
+    wiz "YES AND IT DOESN'T MATTER WHAT YOU SAY ANYMORE! I WAS TRYING TO GIVE YOU A CHANCE AT A SHORTER SENTENCE BUT IN THE END I SEE YOU PREFER TO PLAY DUMB TO THE VERY END."
+
+    "You see the Wizard slowly turn towards the door, but you quickly lunge at him with your chair hitting him in the back."
+
+    "His gun slips out of his coat and you attempt to grab it, but he was quick to react and shoves you away."
+
+    "*Bang*"
+
+    "You feel a sharp pain on your side and fall to the ground."
+
+    "Blood starts spilling on the floor and you can barely see the Wizard coming closer towards you."
+
+    "He squats down next to you and starts snickering."
+
+    wiz "THIS TURNED OUT BETTER THAN I THOUGHT. NOT ONLY WILL YOU TAKE THE BLAME FOR THE MURDER, BUT YOU WILL NOT EVEN BE ABLE TO CLEAR YOUR NAME. HAHAHA!"
+
+    wiz "AH, WHY THE CONFUSED FACE?! OHHHH, I SEE HAHA I GUESS I SHOULD TELL YOU."
+
+    "He leans closer to your ear and whispers to you:"
+
+    wiz "{i}I killed that witch.{\i}"
+
+    wiz "HaHaHAHAHAHA"
+
+    "You no longer feel any pain. Instead you feel the anger fueling your body and all you can think about is the gun in his hand."
+
+    "You reach for the gun just inches away from you and pull the trigger."
+
+    "*Bang*"
+
+    "The laughter that came from the Wizard stopped, and you look to see the shock in his face as he falls."
+
+    dorothy "Guess what Wizard? You were right. I-"
+
+    dorothy "did murder-"
+
+    dorothy "some- one..."
+
+    scene black with fade
+
+    "You and the Wizard were both found dying by the police officers after the commotion."
+
+    "In your dying thoughts, you thought you could have made some better choices in the events leading up to this one."
+
+    "You both died before an ambulance was able to arrive."
+
+    "BAD END - MURDER SUICIDE"
 
     jump end
