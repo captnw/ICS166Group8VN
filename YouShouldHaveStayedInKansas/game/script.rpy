@@ -92,9 +92,11 @@ init python:
 # The game starts here.
 label start:
 
+    play music "audio/sillytheme.mp3" fadein 1.0 loop
+
     # outsideBigBen bg
-    scene outsideBigBen :
-        zoom 1.5
+    scene outsideBigBen with fade :
+        zoom 1.5 
 
     show dorothyPlaceholder at center
     "Your name is Dorothy and you are simply ecstatic 
@@ -220,6 +222,8 @@ label chapter00D:
     After a moment’s thought, you walk on towards Big Ben with a confident stride.
     You are quite proud of the shoes you are wearing and you don’t care who knows it!"
     hide dorothyPlaceholder
+
+    stop music fadeout 1.0
 
     scene black
     show insideBigBen
