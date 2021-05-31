@@ -422,7 +422,34 @@ label chapter06Choice1_1_2:
     jump end
 
 label chapter06Result1_2:
+    wiz "REALLY? DID YOU FIND OUT WHO IT WAS?"
+
+    wiz "WAIT, WAIT. I DON'T CARE."
+
+    dorothy "I wasn't going to tell you anyways."
+
+    wiz "WHATEVER. LET ME TELL YOU HOW IT'S GOING TO GO."
+
+    jump chapter06PathB
 
 label chapter06Result1_3:
+    wiz "WRONG. YOU STILL HAVE THE EVIDENCE YOU STOLE FROM OUR POLICE STATION."
+
+    wiz "AS A RESULT OF YOU STEALING OUR EVIDENCE, YOU'VE TRESPASSED IN THE STATION AND YOU'VE DELAYED THE INVESTIGATION."
+
+    wiz "IN SHORT, YOU'VE WASTED MY TIME."
+
+    dorothy "Well I don't have the evidence on me right now."
+
+    wiz "I KNOW, I'VE SENT MY OFFICERS TO SCARECROW'S APARTMENT."
+
+    wiz "WE'VE RECLAIMED THE EVIDENCE, AND I COULDN'T BELIEVE WHAT I SAW."
+
+    wiz " LET ME SHARE WITH YOU WHAT'S GONNA HAPPEN NOW."
+
+    jump chapter06PathB
+
+label chapter06PathB:
+    
 
     jump end
