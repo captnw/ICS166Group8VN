@@ -15,8 +15,8 @@ define policeman1 = Character("Policeman 1", color="#0000ff")
 define policeman2 = Character("Policeman 2", color="#0000ff")
 
 # placeholder character portraits
-image ScarecrowPlaceholder = Placeholder("boy")
-image dorothyPlaceholder = Placeholder("girl")
+image ScarecrowPlaceholder = "characterSprites/scarecrowSprite.png"
+image dorothyPlaceholder = "characterSprites/dorothySprite.png"
 image lionPlaceholder = Placeholder("boy")
 image tinmanPlaceholder = Placeholder("boy")
 
