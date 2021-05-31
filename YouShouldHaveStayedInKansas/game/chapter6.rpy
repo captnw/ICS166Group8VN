@@ -299,6 +299,80 @@ label chapter06Choice1_1_1:
     "BAD END - FOOLED BY THE MONEY"
 
 label chapter06Choice1_1_2:
+    dorothy "No"
+
+    wiz "what!!?"
+
+    dorothy "NOOO! I am pretty sure I said it clearly for you to understand!!"
+
+    wiz "why not!!??  don’t you want the money!!?"
+
+    dorothy "Of COURSE, but not enough to let you get away with what you have done!!"
+
+    wiz "wha-"
+
+    dorothy "Because of you I thought I had done an unspeakable thing!!
+      Because of you I had to use the kindness of Scarecrow to clear my name!!"
+
+    dorothy "Because of you I had to worry about how much time I had left!!
+    And YOU killed someone!! YOU DID IT!! It was you the whole time!!"
+
+    wiz "Be quiet!!! I did what had to be done! 
+    she did not hand over the shoes when i told her too!! 
+    she forced my hand!!  I had to kill her!!"
+
+    dorothy "You are just pathetic!!
+    Acting like you are some grand person 
+    when in reality you are just a small old man!!" 
+
+    wiz "SILENCE!!!"
+
+    dorothy "{i}shocked{/i}"
+
+    wiz "FINE, I WON’T FORCE YOU TO TAKE THE MONEY. 
+    I WAS NEVER GOING TO GIVE YOU A CENT ANYWAYS. 
+    EITHER WAY I WILL PIN EVERYTHING ON YOU 
+    AND I WILL MAKE SURE YOU SPEND THE REST OF YOUR LIFE BEHIND BARS."
+
+    dorothy "You can’t do that!
+    I have proof that you did it!"
+
+    wiz "DO YOU REALLY THINK ANYONE WILL BELIEVE YOU OVER ME!!?"
+
+    wiz "HAHAHAHAHA!!!"
+
+    wiz "I AM “THE WIZ”. YOU ARE JUST A LITTLE GIRL."
+
+    wiz "NO ONE WILL QUESTION ME."
+
+    "All you can do is watch in horror as the wizard says this 
+    because he was right. Who would believe you? You found out
+    who it was, but in the end you are still going to be the one 
+    to take the blame."
+
+    "Just as you were panicking, the door creaks open 
+    and you see Scarecrow playfully swinging on the door. 
+    You can also see Tin Man just outside and a few others 
+    that you can’t quite make out."
+
+    dorothy "Scarecrow?"
+
+    wiz "WHAT ARE YOU DOING HERE!!? TIN MAN GET THIS BOY OUT OF MY SIGHT!"
+
+    tinman "I don't think I will"
+
+    wiz "WHAT?!?"
+
+    wiz "HOW DARE YOU!?"
+
+    wwwest "NO, HOW DARE YOU!!?  YOU MURDERER!!"
+
+    wiz "WHAT!!!?"
+
+    "You see Scarecrow make his way inside the questioning room 
+    with a pipe on his lips blowing bubbles. And then you see 
+    everyone else come in as well."
+
 
 label chapter06Result1_2:
 
