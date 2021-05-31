@@ -229,6 +229,8 @@ label chapter00D:
     show insideBigBen
     with fade
 
+    play music "audio/sillytheme.mp3" fadein 1.0 loop volume 0.2
+
     show dorothyPlaceholder
 
     dorothy "Hmmm... Let's see here..."
@@ -294,6 +296,8 @@ label chapter00Result2:
     show dorothyPlaceholder
     with fade
     
+    stop music fadeout 1.0
+
     "You're staring intently at the place in the sky where the sun is still hidden..."
 
     dorothy "Any second now..."
