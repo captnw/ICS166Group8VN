@@ -269,6 +269,8 @@ menu chapter00Choice2:
 
 label chapter00Result2:
 
+    play sound "audio/take picture.mp3"
+
     "*Click!" 
 
     dorothy "Hmm..."
