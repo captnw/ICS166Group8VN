@@ -238,6 +238,8 @@ label chapter06Choice1_1_1:
 
     "BAD END - FOOLED BY THE MONEY"
 
+    jump end
+
 label chapter06Choice1_1_2:
     dorothy "No"
 
@@ -417,6 +419,7 @@ label chapter06Choice1_1_2:
 
     "GOOD END - MURDERER GOES TO JAIL"
 
+    jump end
 
 label chapter06Result1_2:
 
