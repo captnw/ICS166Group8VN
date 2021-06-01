@@ -6,6 +6,8 @@ label chapter02:
 
     "CHAPTER 2: SNEAKING INTO THE POLICE STATION"
 
+    play music "audio/forest.mp3" loop fadein 3.0
+
     scene policeStation at truecenter:
         zoom 1.6
     with fade
@@ -422,6 +424,8 @@ label chapter02BA:
 
     tinman "..."
 
+    stop music fadeout 2.0
+
     scene black
     with dissolve
 
@@ -519,6 +523,8 @@ label chapter02BB:
     with dissolve
 
     tinman "..."
+
+    stop music fadeout 2.0
 
     scene black
     with dissolve
