@@ -328,6 +328,8 @@ label chapter00Result2:
     "That was your best camera, and now you've just thrown it off the side of the tallest building in London!
     How on earth do you plan on {i}paying{/i}..."
 
+    play music "audio/buzzkill.mp3" loop
+
     stranger "EEEEEEEK!"
 
     stranger "AAAARGH!"
@@ -359,6 +361,8 @@ label chapter00Result2:
 
     hide dorothyPlaceholder
     scene black with fade
+
+    stop music fadeout 1.0
 
     # Go to chapter1
     jump chapter01

@@ -14,6 +14,8 @@ label chapter01:
 
     "CHAPTER 1: WITHIN THE CROWD"
 
+    play music "audio/distrust.mp3" loop fadein 3.0
+
     scene crimeScene
     with fade
 
@@ -83,6 +85,8 @@ label chp01Choice01Cont:
 
     investigator "What do you normally like to eat?! Who can testify for you?! How many fingers do I have behind my back?!"
 
+    stop music fadeout 2.0
+
     "As this goes on, you no longer feel unease. In fact you feel very confused about what was going on. But before you can even get a word out “The Wiz” decides to pop in."
 
     hide ScarecrowPlaceholder
@@ -136,6 +140,8 @@ label chp01Choice02Cont:
     show ScarecrowPlaceholder at right
     show dorothyPlaceholder at left
     with fade
+
+    play music "audio/sillytheme.mp3" loop fadein 2.0
 
     dorothy "Hey, hold on!"
     dorothy "Hey!"
@@ -197,9 +203,13 @@ label chp01Choice02Cont:
 
     scarecrow "Oh I get ya, let’s head over there now."
 
+    stop music fadeout 1.0
+
     scene policeQuestioningRoom :  #transition to the police questioning room
         zoom 1.5
     with fade
+
+    play music "audio/forest.mp3" loop fadein 2.0
 
     "The WW West is in a questioning room. She is being questioned by the Lead Investigator aka “The Wiz” and a forensic officer Tin Man."
 
@@ -239,5 +249,7 @@ label chp01Choice02Cont:
 
     scene black
     with dissolve
+
+    stop music fadeout 2.0
 
     jump chapter02
