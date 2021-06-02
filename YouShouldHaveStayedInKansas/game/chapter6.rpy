@@ -301,12 +301,12 @@ label chapter06Choice1_1_2:
     wiz "HOW DARE YOU!?"
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     wwwest "NO, HOW DARE YOU!!?  YOU MURDERER!!"
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder
     with dissolve
 
@@ -325,7 +325,7 @@ label chapter06Choice1_1_2:
     wiz "WHAT IS GOING ON HERE?!!?"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
     with dissolve
 
     scarecrow "Funny you should ask. Let me explain."
@@ -350,7 +350,7 @@ label chapter06Choice1_1_2:
 
     scarecrow "Which is why I called everyone here on this fine day!!"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
     with dissolve
 
@@ -384,7 +384,7 @@ label chapter06Choice1_1_2:
 
     hide wwWestPlaceholder
     hide lionPlaceholder
-    show scarecrowPlaceholder at center
+    show ScarecrowPlaceholder at center
     with dissolve
 
     scarecrow "I have to build suspense."
@@ -395,137 +395,137 @@ label chapter06Choice1_1_2:
 
     scarecrow "This photo that I developed last night. As you can see, it is a little blurry due to the velocity and impact of the camera. But you can clearly see a coat that is none other than that of the LEAD INVESTIGATOR!!!"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "ANYONE CAN BE WEARING A COAT-"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "You're right, but no one in their right mind would want to copy the exact coat you always seem to wear."
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "But I always wear a hat and this person is not-"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "Also a valid point. Unless we take off yours. Then we may or may not see the similarities."
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "I WILL NOT UNDRESS JUST FOR YOUR AMUSEMENT!! SOMEONE TAKE THIS BUFFOON AWAY FROM ME!!"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "Very well, but then we have the note Tin Man gave us. Your note."
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "WHAT NOTE?!"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "The one about the shoes do you not remember??"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "THAT WAS NOT ME!!"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "But it is your exact writing. And it has writing about red shoes, the same ones the WW East wore when whe was murdered."
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "SHE WAS NOT WEARING ANY SHOES WHEN WE FOUND HER BODY-"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "Key word when you found the body. The motive was always the shoes because they had something worth more than her life. Right?"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "WHAT NO!!?"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "WW West you wanted them found because they were a family heirloom right??"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wwWestPlaceholder
 
     wwwest "Yes."
 
     hide wwWestPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "But the shoes themselves were just a disguise for something much bigger. Right?"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wwWestPlaceholder
 
     wwwest "Right."
 
     hide wwWestPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "A rich family's fortune, correct?"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wwWestPlaceholder
 
     wwwest "Yes."
 
     hide wwWestPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "And no one should have known about it, correct?"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wwWestPlaceholder
 
     wwwest "Yes, it was supposed to be a secret passed on to the next heir. My sister."
 
     hide wwWestPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "So why did the note that you wrote have so much detail on the shoe? Anyone else that saw this note would be very confused unless they knew about the family heirloom, correct Tin Man?"
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show tinmanPlaceholder
 
     tinman "Yes. That is exactly what happened when I first saw it, which is why I gave it to you two."
 
     hide tinmanPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "Indeed you did and it was not until we went to the Mansion that we found more about this heirloom."
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "WHAT NO"
 
     hide wizPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "Yes the camera was Dorothy's but she was not the murderer, it was you."
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "THAT IS OUTRAGEOUS!! IT WASN'T ME!! THIS IS WRONG"
@@ -537,12 +537,12 @@ label chapter06Choice1_1_2:
     lion "That's the voice!! That's the voice I heard!! You were the man with those eyes!!"
 
     hide lionPlaceholder
-    show scarecrowPlaceholder
+    show ScarecrowPlaceholder
 
     scarecrow "Take him away, boys."
     # points at police officers, then wizard
 
-    hide scarecrowPlaceholder
+    hide ScarecrowPlaceholder
     show wizPlaceholder
 
     wiz "No! I am the lead investigator!! You can't do this to me!"
@@ -557,7 +557,7 @@ label chapter06Choice1_1_2:
     dorothy "Wow Scarecrow. You really are amazing."
 
     hide dorothyPlaceholder
-    show scarecrowPlaceholder at center
+    show ScarecrowPlaceholder at center
 
     scarecrow "Was there ever a doubt?!"
 
