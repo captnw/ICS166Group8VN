@@ -359,6 +359,8 @@ label chapter00Result2:
 
     dorothy "Oh God..."
 
+    play sound "audio/running footsteps.mp3"
+
     "Almost as soon as the words are out of your mouth, 
     you turn around and start flying down the stairs as fast as your running shoes can carry you"
 
