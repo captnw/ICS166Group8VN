@@ -28,7 +28,8 @@ label chapter03:
     show ScarecrowPlaceholder at left
     with dissolve 
 
-    scarecrow "{i}pant{/i} ...They won’t be able to find us on this street anyways. We can spot them before they see us, and by the time they’ve reached us, we’ll just blend into the crowd."
+    scarecrow "{i}pant{/i} ...They won’t be able to find us on this street anyways."
+    scarecrow "We can spot them before they see us, and by the time they’ve reached us, we’ll just blend into the crowd."
 
     dorothy "You sound like you know a thing or two about running away from other people."
 
@@ -37,9 +38,11 @@ label chapter03:
     hide dorothyPlaceholder
     show dorothyFunny at right
 
-    dorothy "Of course! All legitimate detectives would sneak into police stations and steal evidence, instead of just asking someone for the evidence. If only there was some form of bureaucracy in place to facilitate this transfer of information."
+    dorothy "Of course! All legitimate detectives would sneak into police stations and steal evidence, instead of just asking someone for the evidence..."
+    dorothy "...If only there was some form of bureaucracy in place to facilitate this transfer of information."
     
-    scarecrow "LOOK, you don’t understand how jealous this district’s police force are of my amazing detective skills. They’re probably afraid of me getting all the credit for all the cases I will solve if they let me get my hands on the evidence."
+    scarecrow "LOOK, you don’t understand how jealous this district’s police force are of my amazing detective skills."
+    scarecrow "They’re probably afraid of me getting all the credit for all the cases I will solve if they let me get my hands on the evidence."
 
     hide dorothyFunny
     show dorothyPlaceholder at right
@@ -64,7 +67,8 @@ label chapter03:
         zoom 1.8
     with fade
 
-    "You've stepped inside the bar to find out that despite being open, the bar seemed almost empty. The tables are all laid out, the room is well-lit, and there is a bartender cleaning glassware in the corner of the room."
+    "You've stepped inside the bar to find out that despite being open, the bar seemed almost empty."
+    "The tables are all laid out, the room is well-lit, and there is a bartender cleaning glassware in the corner of the room."
 
     show ScarecrowPlaceholder
     with dissolve 
@@ -159,7 +163,8 @@ label chapter03B:
 
     dorothy "(This is probably way too direct, he should try to be a bit more subtle with his questioning)"
 
-    dorothy "I think what my friend here was trying to say is that we’re independent detectives employed by the Wicked Witch of the West to find out about the circumstances about her sister’s death."
+    dorothy "I think what my friend here was trying to say is that we’re independent detectives."
+    dorothy "And we're directly employed by the Wicked Witch of the West to find out about the circumstances about her sister’s death."
 
     scene insideMunchkinBar at truecenter :
         zoom 1.8
@@ -263,7 +268,8 @@ label chapter03B:
     show bartenderPlaceholder at right
     with dissolve
 
-    bartender "YOU COME INTO MY SHOP. I TREAT YOU POLITELY AND THEN YOU ASK TOO MANY QUESTIONS ABOUT SOMETHING I DON'T WANT TO TALK ABOUT AND THEN YOU BREAK MY FURNITURE." 
+    bartender "YOU COME INTO MY SHOP. I TREAT YOU POLITELY."
+    bartender "BUT THEN YOU ASK TOO MANY QUESTIONS ABOUT SOMETHING I CLEARLY DON'T LIKE TO TALK ABOUT SO THEN YOU BREAK MY FURNITURE." 
 
     scene insideMunchkinBar at truecenter :
         zoom 1.8

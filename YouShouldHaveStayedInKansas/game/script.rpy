@@ -103,7 +103,7 @@ init python:
 # The game starts here.
 label start:
 
-    play music "audio/sillytheme.mp3" fadein 1.0 loop
+    play music "audio/sillytheme.mp3" fadein 1.0 loop volume 0.5
 
     # outsideBigBen bg
     scene outsideBigBen with fade :
@@ -339,7 +339,7 @@ label chapter00Result2:
     "That was your best camera, and now you've just thrown it off the side of the tallest building in London!
     How on earth do you plan on {i}paying{/i}..."
 
-    play music "audio/buzzkill.mp3" loop
+    play music "audio/buzzkill.mp3" fadein 1.0 loop volume 0.4
 
     stranger "EEEEEEEK!"
 

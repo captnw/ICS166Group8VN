@@ -14,7 +14,7 @@ label chapter01:
 
     "CHAPTER 1: WITHIN THE CROWD"
 
-    play music "audio/distrust.mp3" loop fadein 3.0
+    play music "audio/distrust.mp3" loop fadein 3.0 volume 0.5
 
     scene crimeScene
     with fade
@@ -141,7 +141,7 @@ label chp01Choice02Cont:
     show dorothyPlaceholder at right
     with fade
 
-    play music "audio/sillytheme.mp3" loop fadein 2.0
+    play music "audio/sillytheme.mp3" loop fadein 2.0 volume 0.5
 
     dorothy "Hey, hold on!"
     dorothy "Hey!"
