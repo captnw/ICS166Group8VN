@@ -157,14 +157,14 @@ label CH5choiceB:
     show ScarecrowPlaceholder at center
     with dissolve
 
-    scarecrow "The lion said there was someone in a heated argument with the victim before the murder. They said...huh, I can’t remember."
+    scarecrow "The lion said there was someone in a heated argument with the victim before the murder. The lion said he heard...huh, I can’t remember."
 
     if hasCollectedRedShoesPhoto:
         hide ScarecrowPlaceholder
         show dorothyPlaceholder at center
         with dissolve
 
-        dorothy "They wanted the shoes."
+        dorothy "That they wanted the shoes."
 
         hide dorothyPlaceholder
         show ScarecrowPlaceholder at center
@@ -267,14 +267,14 @@ label CH5choiceC:
     scarecrow "The question remains...whose camera is it? I can take fingerprints, see if they’re in any database…"
 
     hide ScarecrowPlaceholder
-    show dorothyPlaceholder at center
+    show dorothySad at center
     with dissolve
 
     dorothy "Maybe it’s just some innocent passerby’s, who didn’t want to get roped into any of this."
     dorothy "Maybe they lost it at the worst opportune moment, and are regretting they ever came to this city..."
     dorothy "...and they're wondering if they’re gonna be the number one suspect through sheer dumb luck."
 
-    hide dorothyPlaceholder
+    hide dorothySad
     show ScarecrowPlaceholder at center
     with dissolve
 
@@ -315,20 +315,20 @@ label CH5choiceD:
     scarecrow "We need to develop it!"
 
     hide ScarecrowPlaceholder
-    show dorothyPlaceholder at center
+    if doYouSuspectYourself:
+        show dorothySad at center
+    else:
+        show dorothyPlaceholder at center
     with dissolve
 
     dorothy "Yes, I guess we do."
 
-    hide dorothyPlaceholder
-    show ScarecrowPlaceholder at center
+    show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "It will take me tonight, so we’ll find out in the morning. I do hope it’s something relevant. I’m glad you found it, Dorothy."
 
     hide ScarecrowPlaceholder
-    show dorothyPlaceholder at center
-    with dissolve
 
     if doYouSuspectYourself:
         dorothy "sure."
@@ -377,22 +377,24 @@ label CH5choiceE:
 label CH5moveON:
 
     if doYouSuspectYourself:
+        hide dorothyPlaceholder
+        show dorothySad
         dorothy "..."
 
-        hide dorothyPlaceholder
-        show ScarecrowPlaceholder at center
+        hide dorothySad
+        show ScarecrowSad at center
         with dissolve
 
         scarecrow "Hey, listen…I know it seems pointless, you know?"
 
-        hide ScarecrowPlaceholder
-        show dorothyPlaceholder at center
+        hide ScarecrowSad
+        show dorothySad at center
         with dissolve
 
         dorothy "..."
 
-        hide dorothyPlaceholder
-        show ScarecrowPlaceholder at center
+        hide dorothySad
+        show ScarecrowSad at center
         with dissolve
 
         scarecrow "I used to think I couldn’t figure out anything. I was...kind of the idiot, you know?"
@@ -430,12 +432,12 @@ label CH5moveON:
         scarecrow "The truth, obviously."
 
         hide ScarecrowPlaceholder
-        show dorothyPlaceholder at center
+        show dorothySad at center
         with dissolve
 
         dorothy "Right."
 
-        hide dorothyPlaceholder
+        hide dorothySad
         show ScarecrowPlaceholder at center
         with dissolve
 
@@ -455,7 +457,7 @@ label CH5moveON:
         scarecrow "Friends don’t lie to each other."
 
         hide ScarecrowPlaceholder
-        show dorothyPlaceholder at center
+        show dorothySad at center
         with dissolve
 
         "You are both silent for a moment."
@@ -463,13 +465,16 @@ label CH5moveON:
         "You don’t know anyone in this city."
         "You didn’t know anyone until today."
 
-        hide dorothyPlaceholder
+        hide dorothySad
         show ScarecrowPlaceholder at center
         with dissolve
 
         scarecrow "I’M NOT A REAL DETECTIVE!"
 
         scarecrow "Few, that felt good to get off my chest."
+
+        hide ScarecrowPlaceholder
+        show ScarecrowSad at center
 
         scarecrow "I wanted to be! But I used to think I couldn’t figure out anything. I was...kind of the idiot, you know?"
     
@@ -481,7 +486,7 @@ label CH5moveON:
     scarecrow "If this one kid follows me, maybe I’m actually good. At being a detective."
     scarecrow "So. Thanks, I guess. It’s been...really fun."
 
-    hide ScarecrowPlaceholder
+    hide ScarecrowSad
     show dorothyPlaceholder at center
     with dissolve
 
@@ -495,11 +500,13 @@ menu dorothychoice:
         jump CH5comfort
 
 label CH5saynothing:
-
+    
+    hide dorothyPlaceholder
+    show dorothySad at center
     dorothy "..."
 
-    hide dorothyPlaceholder
-    show ScarecrowPlaceholder at center
+    hide dorothySad
+    show ScarecrowSad at center
     with dissolve
 
     scarecrow "But you don’t look that eager now. Maybe I am the idiot, huh? Running us in circles? I get it."
@@ -508,15 +515,15 @@ label CH5saynothing:
 
     scarecrow "You should go home. Your parents are probably looking for you."
 
-    hide ScarecrowPlaceholder
-    show dorothyPlaceholder at center
+    hide ScarecrowSad
+    show dorothySad at center
     with dissolve
 
     dorothy "...Yeah, I guess you’re right."
 
     "You turn to leave. As you walk out the door, Scarecrow calls out."
 
-    hide dorothyPlaceholder
+    hide dorothySad
     show ScarecrowPlaceholder at center
     with dissolve
 
@@ -553,23 +560,26 @@ label CH5comfort:
 
     dorothy "But. You’re good at figuring things out. And better than that, you care. Not a lot of people care as much as you do, you know? About finding the truth."
 
+    hide dorothyPlaceholder
+    show ScarecrowSad
+
     "Scarecrow looks at the board of clues. He fidgets with the chalk."
 
-    hide dorothyPlaceholder
+    hide ScarecrowSad
     show ScarecrowPlaceholder at center
     with dissolve
 
     scarecrow "Thanks, I guess. Maybe you're-"
 
     hide ScarecrowPlaceholder
-    show dorothyPlaceholder at center
+    show dorothyFunny at center
     with dissolve
 
     dorothy "I'm right."
 
     "Scarecrow laughs."
 
-    hide dorothyPlaceholder
+    hide dorothyFunny
     show ScarecrowPlaceholder at center
     with dissolve
 
@@ -623,7 +633,7 @@ label CH5bridgescene:
     dorothy "Hello?"
 
     hide dorothyPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     wwwest "You."
@@ -631,7 +641,7 @@ label CH5bridgescene:
     "W. W. West steps out of the fog. She looks like she hasn’t slept in days. Her face is full of contempt and suspicion."
 
     show dorothyPlaceholder at left
-    show wwWestPlaceholder at right
+    show wwWestAngry at right
     with dissolve
 
     if hasCh4Happened:
@@ -647,7 +657,7 @@ label CH5bridgescene:
 
     wwwest "It was you, wasn't it? You killed her."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show dorothyPlaceholder at center
     with dissolve
 
@@ -660,36 +670,36 @@ menu bridgescenedialogue:
 
 label CH5bridgescenecontinued:
     hide dorothyPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     wwwest "Don’t lie to me! It was you! My sister is dead because of you!"
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show dorothyPlaceholder at center
     with dissolve
 
     dorothy "With what proof?"
 
     hide dorothyPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     wwwest "The Wizard-"
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show dorothyPlaceholder at center
     with dissolve
 
     dorothy "Do you really trust the Wizard?"
 
     hide dorothyPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     wwwest "You’ll pay for this, girl, I swear. You will pay for my loss."
     
-    hide wwWestPlaceholder
+    hide wwWestAngry
 
     "A cloud of fog erupts from the air. The witch disappears into it. You are left standing in the cold, alone."
 
