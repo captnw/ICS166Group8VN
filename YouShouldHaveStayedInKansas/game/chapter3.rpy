@@ -8,6 +8,9 @@ label chapter03:
 
     "CHAPTER 3: AT THE BAR"
 
+    play music "audio/strongman.mp3" loop volume 0.05
+    play sound "audio/rain.mp3" loop volume 0.5
+
     # street bg here, fade in
     scene randomStreet2 at truecenter :
         zoom 1.5
@@ -66,6 +69,9 @@ label chapter03:
     scene insideMunchkinBar at truecenter :
         zoom 1.8
     with fade
+
+    play music "audio/strongman.mp3" loop volume 0.3
+    play sound "audio/rain.mp3" loop volume 0.05
 
     "You've stepped inside the bar to find out that despite being open, the bar seemed almost empty."
     "The tables are all laid out, the room is well-lit, and there is a bartender cleaning glassware in the corner of the room."
@@ -307,11 +313,16 @@ label chapter03B:
         zoom 1.5
     with fade
 
+    play music "audio/strongman.mp3" loop volume 0.05
+    play sound "audio/rain.mp3" loop volume 0.5
+
     "You both run until the store is out of view."
 
     scene randomStreet2 at truecenter :
         zoom 1.5
     with fade
+
+    stop music fadeout 1.0
 
     show ScarecrowPlaceholder at center
 
@@ -605,11 +616,16 @@ label chapter03AB:
         zoom 1.5
     with fade
 
+    play music "audio/strongman.mp3" loop volume 0.05
+    play sound "audio/rain.mp3" loop volume 0.5
+
     "You both run until the store is out of view."
 
     scene randomStreet2 at truecenter :
         zoom 1.5
     with fade
+
+    stop music fadeout 1.0
 
     show ScarecrowPlaceholder at center
 
@@ -833,6 +849,9 @@ label chapter03AAContinued:
         zoom 1.5
     with fade
 
+    play music "audio/strongman.mp3" loop volume 0.05
+    play sound "audio/rain.mp3" loop volume 0.5
+
     show ScarecrowPlaceholder at left
     show dorothyPlaceholder at right
 
@@ -847,5 +866,8 @@ label chapter03AAContinued:
 
     scene black
     with dissolve
+
+    stop music fadeout 1.0
+    stop sound fadeout 1.0
 
     jump chapter04 # go to chapter 4
