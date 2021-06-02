@@ -118,7 +118,7 @@ label chapter04AA:
 
     "A doorbell is heard, Scarecrow is already at the door, ringing the bell"
 
-    scarecrow "Oh hi mam would you like to talk to the guy standing outside your window talking to himself?"
+    scarecrow "Oh hi ma'am, would you like to talk to the guy standing outside your window talking to himself?"
 
     # W. W. West portrait show
     hide tinmanPlaceholder
@@ -130,7 +130,7 @@ label chapter04AA:
     "Tin Man and Dorothy dash over to the front door."
 
     hide ScarecrowPlaceholder 
-    show tinmanPlaceholder at right
+    show tinmanPlaceholder at left
     with dissolve 
 
     tinman "{i}Out of breath{/i} Hello madam! I was wondering if you uh, um, uhhhhhh..."
@@ -144,7 +144,7 @@ label chapter04AA:
     wwwest "{i}sigh{/i} yeah okay let me go get some ready in a bag for you, you can come in if you want."
 
     hide tinmanPlaceholder 
-    show ScarecrowPlaceholder at right
+    show ScarecrowPlaceholder at left
     with dissolve 
 
     scarecrow "Sweet! We don’t even have to sneak in now!"
@@ -175,7 +175,7 @@ label chapter04AA:
 
     tinman "{i}sigh{/i} now she’s probably going to hate me more than she already does."
 
-    show dorothyPlaceholder at right
+    show dorothyPlaceholder at center
     with dissolve
 
     dorothy "What do you mean?"
@@ -200,7 +200,7 @@ label chapter04AAA:
 
     dorothy "Obviously."
 
-    show ScarecrowPlaceholder at center 
+    show ScarecrowPlaceholder at left 
     with dissolve
 
     scarecrow "How many love letters have you even sent, it’s been like, a day."
@@ -224,8 +224,8 @@ label chapter04AAA:
 
     "Tin Man walks away into another room where the W.W. West is."
 
-    hide ScarecrowPlaceholder 
-    show ScarecrowPlaceholder at left
+    hide dorothyPlaceholder
+    show dorothyPlaceholder at right
     with dissolve
 
     dorothy "Scarecrow you’re a genius! Now we can look around while she’s distracted."
@@ -255,6 +255,7 @@ label chapter04AAB:
 
     "Dorothy sneaks over to eavesdrop on Tin Man and W. W. West's conversation."
 
+    hide dorothyPlaceholder
     show tinmanPlaceholder at center 
     show wwWestPlaceholder at right 
     with dissolve 
@@ -287,6 +288,8 @@ label chapter04AAC:
     
     "Scarecrow darts down the stairs."
 
+    show dorothyPlaceholder at left
+
     dorothy "{i}Wide-eyed{/i} The uh, the sugar! We found it! Thank you!"
 
     wwwest "Wait what how? It should be right over here, did that voice come from upstairs, was that guy upstairs!?"
@@ -307,7 +310,7 @@ label chapter04AAC:
     show dorothyPlaceholder at right
     with dissolve
 
-    dorothy "{i}Out of breath{/i} Why the heck dd you have to shout that you found it?"
+    dorothy "{i}Out of breath{/i} Why the heck did you have to shout that you found it?"
 
     show ScarecrowPlaceholder at left
     with dissolve 
@@ -320,9 +323,14 @@ label chapter04AAC:
 
     dorothy "{b}WHAT?{/b}"
 
+    hide ScarecrowPlaceholder
+    show ScarecrowFunny at left
+
     scarecrow "{i}Chuckling{/i} I’m kidding, I’m kidding. I found this developed film, it has a picture of some really pretty red shoes on it. I think the film came from the same camera from the police station actually."
     $ hasCollectedRedShoesPhoto = True
 
+    hide ScarecrowFunny
+    show ScarecrowPlaceholder at left
     scarecrow "Seems to be from the scene of the crime, or something, and if you look closely at it seems there’s a secret compartment in the shoes, there’s something shiny peeking out."
 
     dorothy "{i}Shocked{/i} You notice all that? How?"
@@ -334,6 +342,9 @@ label chapter04AAC:
     scarecrow "Anyway you wanna head to the store? Since we didn’t get any sugar from the W.W. West?"
 
     dorothy "I have no words."
+
+    hide ScarecrowPlaceholder
+    show ScarecrowFunny
 
     scarecrow "What do you mean? Do we not need the sugar anymore?"
 
@@ -367,7 +378,7 @@ label chapter04B:
 
     hide ScarecrowPlaceholder
     hide dorothyPlaceholder
-    show dorothyPlaceholder at center
+    show dorothyPlaceholder at left
 
     show wwWestAngry at right 
     with dissolve 
