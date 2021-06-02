@@ -13,6 +13,8 @@ label chapter04:
     "Chapter 4: W. W. WEST'S MANSION"
     $ hasCh4Happened = True
 
+    play music "audio/sillytheme.mp3" volume 0.5
+
     # outsideMansion bg
     scene outsideMansion at truecenter :
         zoom 1.55
@@ -116,6 +118,7 @@ label chapter04AA:
 
     tinman "Oh no, I could never."
 
+    play sound "audio/doorbell.mp3" volume 0.5
     "A doorbell is heard, Scarecrow is already at the door, ringing the bell"
 
     scarecrow "Oh hi ma'am, would you like to talk to the guy standing outside your window talking to himself?"
@@ -155,10 +158,14 @@ label chapter04AA:
 
     "Scarecrow and Dorothy dash into the house with Tin Man trailing behind, W.W. West walks in behind them shaking her head."
 
+    stop music fadeout 1.0
+
     # insideMansion bg
     scene insideMansion at truecenter :
         zoom 1.6
     with fade
+
+    play music "audio/peacefulsong.mp3" volume 0.8 fadein 1.0
 
     show wwWestPlaceholder at center 
     with dissolve
@@ -282,8 +289,10 @@ label chapter04AAC:
     show ScarecrowPlaceholder at center
     with dissolve
 
+    stop music fadeout 1.0
     scarecrow "{i}Heard from the second story{/i} {b}FOUND IT!{/b}"
 
+    play music "audio/silly and intense.mp3" volume 0.3
     wwwest "{i}shocked{/i} What? Found what!?"
     
     "Scarecrow darts down the stairs."
@@ -302,10 +311,14 @@ label chapter04AAC:
 
     "Dorothy and Scarecrow run out the front door and get away"
 
+    stop music fadeout 1.0
+
     # randomStreet bg
     scene randomStreet at truecenter :
         zoom 1.5
     with fade
+
+    play music "audio/sillytheme.mp3" loop fadein 2.0 volume 0.3
 
     show dorothyPlaceholder at right
     with dissolve
@@ -352,6 +365,8 @@ label chapter04AAC:
 
     scene black
     with dissolve
+
+    stop music fadeout 2.0
 
     jump chapter05
 
@@ -413,5 +428,7 @@ label chapter04BB:
 
     scene black
     with dissolve
+
+    stop music fadeout 2.0
 
     jump chapter05
