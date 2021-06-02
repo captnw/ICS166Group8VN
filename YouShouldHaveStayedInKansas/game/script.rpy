@@ -16,12 +16,23 @@ define policeman2 = Character("Policeman 2", color="#0000ff")
 
 # placeholder character portraits
 image ScarecrowPlaceholder = "characterSprites/scarecrowSprite.png"
-image dorothyPlaceholder = "characterSprites/dorothySprite.png"
-image lionPlaceholder = Placeholder("boy")
-image tinmanPlaceholder = Placeholder("boy")
+image ScarecrowSad = "characterSprites/scarecrowSpritesad.png"
+image ScarecrowFunny = "characterSprites/scarecrowSpriteuwu.png"
 
-image wizPlaceholder = Placeholder("boy")
-image wwWestPlaceholder = Placeholder("girl")
+image dorothyPlaceholder = "characterSprites/dorothySprite.png"
+image dorothySad = "characterSprites/dorothySpritesad.png"
+image dorothyFunny = "characterSprites/dorothySpriteuwu.png"
+
+image lionPlaceholder = "characterSprites/LionSprite.png"
+image tinmanPlaceholder = "characterSprites/TinmanSprite.png"
+
+image wizPlaceholder = "characterSprites/wizardSprite.png"
+image wizDramatic = "characterSprites/wizardSpritedramatic.png"
+
+image wwWestPlaceholder = "characterSprites/witchSprite.png"
+image wwWestAngry = "characterSprites/witchSpriteangry.png"
+
+
 
 image MaleStranger = Placeholder("boy")
 image FemaleStranger = Placeholder("girl")
@@ -49,7 +60,7 @@ image londonPhoto3 = im.Blur("londonPhotoBridge.jpg" ,0.1)
 # chapter 1
 image crimeScene = im.Blur("allyWay.jpg", 0.1)
 
-image wizBlurred = Placeholder("boy") # the wizard but just his shadow/outline
+image wizBlurred = "characterSprites/wizardSpritedramatic.png" # the wizard but just his shadow/outline
 
 # chapter2
 image outsidePoliceStation = im.Blur("londonStreet.jpg" ,0.5)
@@ -57,7 +68,7 @@ image outsidePoliceStation = im.Blur("londonStreet.jpg" ,0.5)
 image RandomPoliceOfficer = Placeholder("girl")
 
 # chapter 3
-image bartenderPlaceholder = Placeholder("boy")
+image bartenderPlaceholder = "characterSprites/LionSprite.png"
 
 image outsideMunchkinBar = im.Blur("londonStreetWellLit.jpg" ,0.5)
 image insideMunchkinBar = im.Blur("bar.jpg" ,0.5)

@@ -24,8 +24,8 @@ label chapter03:
     # scarecrow portrait show here, dorthy portrait moves to left side, while
     # scarecrow portrait's move to right side
 
-    show dorothyPlaceholder at left
-    show ScarecrowPlaceholder at right
+    show dorothyPlaceholder at right
+    show ScarecrowPlaceholder at left
     with dissolve 
 
     scarecrow "{i}pant{/i} ...They won’t be able to find us on this street anyways. We can spot them before they see us, and by the time they’ve reached us, we’ll just blend into the crowd."
@@ -34,15 +34,27 @@ label chapter03:
 
     scarecrow "Well, if you ever become an expert detective like myself, then you’ll learn to pick up a few skills of the trade."
 
-    dorothy "Of course! All legitimate detectives would sneak into police stations and steal evidence, instead of just asking someone for the evidence. If only there was some form of bureaucracy in place to facilitate this transfer of information."
+    hide dorothyPlaceholder
+    show dorothyFunny at right
 
+    dorothy "Of course! All legitimate detectives would sneak into police stations and steal evidence, instead of just asking someone for the evidence. If only there was some form of bureaucracy in place to facilitate this transfer of information."
+    
     scarecrow "LOOK, you don’t understand how jealous this district’s police force are of my amazing detective skills. They’re probably afraid of me getting all the credit for all the cases I will solve if they let me get my hands on the evidence."
 
+    hide dorothyFunny
+    show dorothyPlaceholder at right
+
     dorothy "Does this mean you haven’t solved a single case yet?"
+
+    hide ScarecrowPlaceholder
+    show ScarecrowSad at left
 
     scarecrow "Well … I would have, but they didn’t let me examine the evidence we gathered for any cases yet. Say, what did the Tin Man hand you earlier?"
 
     dorothy "I’m not sure what to make of it. We can examine it later, is there any place where we can find shelter? I’m not familiar with this part of town."
+
+    hide ScarecrowSad
+    show ScarecrowPlaceholder at left
 
     scarecrow "I was thinking we head to my place, but I’d like to make a quick stop at the Munchkin’s bar and grille for a quick snack."
 
@@ -59,8 +71,8 @@ label chapter03:
 
     scarecrow "And we’re finally here!"
 
-    show dorothyPlaceholder at left
-    show ScarecrowPlaceholder at right
+    show dorothyPlaceholder at right
+    show ScarecrowPlaceholder at left
     with dissolve 
 
     dorothy "Can’t we just head straight to your place? I’d like to examine the photo as soon as possible."
@@ -80,8 +92,8 @@ label chapter03:
 
     scene insideMunchkinBar at truecenter :
         zoom 1.8
-    show dorothyPlaceholder at left
-    show ScarecrowPlaceholder at right
+    show dorothyPlaceholder at right
+    show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Dorothy, there were a lot of onlookers at that crime scene."
@@ -398,11 +410,11 @@ label chapter03A:
     bartender "I think her name was - the Wicked Witch of the East. I didn’t like her that much, but nobody deserves a fate like that, not even her."
 
     hide bartenderPlaceholder
-    show ScarecrowPlaceholder
+    show ScarecrowFunny
 
     scarecrow "{i}munch munch{/i} You didn’t like her?"
 
-    hide scarecrow
+    hide ScarecrowFunny
     show bartenderPlaceholder
 
     bartender "It’s a bit personal, so I won’t talk about that."
@@ -420,11 +432,11 @@ label chapter03A:
     bartender "No of course not, I’m aware of her reputation around these parts, I didn’t want to get in her way."
 
     hide bartenderPlaceholder
-    show ScarecrowPlaceholder
+    show ScarecrowFunny
 
     scarecrow "{i}munch{/i} Do tell us more! {i}sips{/i}"
 
-    hide ScarecrowPlaceholder
+    hide ScarecrowFunny
     show bartenderPlaceholder
 
     bartender "I was there at that time because I was working my second job - as a janitor - and I was sweeping the same places I’ve always been sweeping."
@@ -565,9 +577,13 @@ label chapter03AB:
 
     dorothy "(We’re clearly not getting any more answers from this person, might as well leave.)"
 
+    hide dorothyPlaceholder
+    show dorothyFunny
+
+
     dorothy "About the payment, why don’t you ask your mum? HA-HA-HA"
 
-    hide dorothyPlaceholder
+    hide dorothyFunny
     show bartenderPlaceholder at center
 
     "The bartender starts rolling up both of his sleeves."

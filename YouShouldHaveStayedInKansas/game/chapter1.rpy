@@ -137,8 +137,8 @@ label chp01Choice02Cont:
 
     scene randomStreet :
         zoom 1.5
-    show ScarecrowPlaceholder at right
-    show dorothyPlaceholder at left
+    show ScarecrowPlaceholder at left
+    show dorothyPlaceholder at right
     with fade
 
     play music "audio/sillytheme.mp3" loop fadein 2.0
@@ -151,6 +151,9 @@ label chp01Choice02Cont:
 
     dorothy "You shouldn’t let that man get to you."
 
+    hide ScarecrowPlaceholder
+    show ScarecrowSad
+
     scarecrow "But he is not wrong about me."
     scarecrow "I have never been able to help anyone out."
 
@@ -158,6 +161,8 @@ label chp01Choice02Cont:
 
     "For a moment, Scarecrow seems lost in thought at your words. Then his face lights up."
 
+    hide ScarecrowSad
+    show ScarecrowPlaceholder
     scarecrow "Hmm... maybe you're right!!"
     scarecrow "I can probably find the murderer of this incident before anyone else too!!"
 
@@ -171,8 +176,8 @@ label chp01Choice02Cont:
     "You are happy about helping Scarecrow bounce back, but now you are worried about all the evidence that would be pointing to you."
     "And as you are having these thoughts you watch as Scarecrow is leaving in excitement."
 
-    show dorothyPlaceholder at left
-    show ScarecrowPlaceholder at right
+    show dorothyPlaceholder at right
+    show ScarecrowPlaceholder at left
     with dissolve
 
     dorothy "{i}alarmingly{/i} WAIT!"
@@ -218,8 +223,8 @@ label chp01Choice02Cont:
 
     wiz "WE UNDERSTAND THAT YOU HAVE SUFFERED A VERY RECENT LOSS, BUT WE JUST WANTED TO KNOW WHERE YOU WERE DURING THE TIME OF YOUR SISTER’S MURDER"
 
-    show wizPlaceholder at right
-    show wwWestPlaceholder at left
+    show wizPlaceholder at left
+    show wwWestAngry at right
     with dissolve
 
     WWWest1 "{i}Silence{/i}"
@@ -229,7 +234,7 @@ label chp01Choice02Cont:
     WWWest "{i}Silence{/i}"
 
     hide wizPlaceholder
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show tinmanPlaceholder at center
     with dissolve
 
@@ -242,7 +247,7 @@ label chp01Choice02Cont:
     wiz "{i}ignoring comment{/i} THIS CAMERA WAS FOUND AT THE SCENE OF THE CRIME."
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     "The W. W. West sees the blood on the camera."

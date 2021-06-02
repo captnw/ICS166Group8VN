@@ -4,9 +4,9 @@
 define bartender = Character("Bartender", color="#bfbfbf") 
 
 # placeholder character portraits
-image scarecrowPlaceholder = Placeholder("boy")
-image dorothyPlaceholder = Placeholder("girl")
-image tinmanPlaceholder = Placeholder("boy")
+#image ScarecrowPlaceholder = Placeholder("boy")
+#image dorothyPlaceholder = Placeholder("girl")
+#image tinmanPlaceholder = Placeholder("boy")
 
 label chapter04:
     
@@ -19,13 +19,13 @@ label chapter04:
     with fade
 
     # scarecrow portrait show
-    show scarecrowPlaceholder at right
+    show ScarecrowPlaceholder at left
     with dissolve
 
     scarecrow "Wow, I had a feeling she'd be rich but not {b}THIS{/b} rich."
 
     # dorothy portrait show
-    show dorothyPlaceholder at left
+    show dorothyPlaceholder at right
     with dissolve
 
     dorothy "Yea whatever, hopefully she doesn't have a security system."
@@ -51,6 +51,9 @@ menu chapter04Choice:
 label chapter04A:
     
     "They sneak over to another bush that's closer to Tin Man"
+
+    hide ScarecrowPlaceholder
+    hide dorothyPlaceholder
 
     #tin man portrait show
     show tinmanPlaceholder at center
@@ -83,6 +86,8 @@ label chapter04AA:
 
     "Scarecrow gets up and walks over to the Tin Man"
 
+    show ScarecrowPlaceholder at left
+
     scarecrow "Hey Tin Man, are you watching W. W. West too?"
 
     "Tin Man is taken aback and a bit spooked"
@@ -94,6 +99,8 @@ label chapter04AA:
     tinman "Wait, what? No, (he heard that?) okay fine, I have a perilous infatuation with the beautiful W. W. West."
 
     "Dorothy gets out from the bush and walks over to where Scarecrow and Tin Man are."
+
+    show dorothyPlaceholder at right
 
     tinman "Wait you're here too? Hold on what are you guys doing here?"
 
@@ -115,14 +122,14 @@ label chapter04AA:
 
     # W. W. West portrait show
     hide tinmanPlaceholder
-    show wwwestPlaceholder at center 
+    show wwWestPlaceholder at center 
     with dissolve 
 
     wwwest "The what? Who?"
 
     "Tin Man and Dorothy dash over to the front door."
 
-    hide scarecrowPlaceholder 
+    hide ScarecrowPlaceholder 
     show tinmanPlaceholder at right
     with dissolve 
 
@@ -137,7 +144,7 @@ label chapter04AA:
     wwwest "{i}sigh{/i} yeah okay let me go get some ready in a bag for you, you can come in if you want."
 
     hide tinmanPlaceholder 
-    show scarecrowPlaceholder at right
+    show ScarecrowPlaceholder at right
     with dissolve 
 
     scarecrow "Sweet! We don’t even have to sneak in now!"
@@ -153,12 +160,12 @@ label chapter04AA:
         zoom 1.6
     with fade
 
-    show wwwestPlaceholder at center 
+    show wwWestPlaceholder at center 
     with dissolve
 
     wwwest "You can just have a seat over there while I go find the sugar."
 
-    hide wwwestPlaceholder
+    hide wwWestPlaceholder
     with dissolve
 
     "The three sit on the couch."
@@ -168,7 +175,7 @@ label chapter04AA:
 
     tinman "{i}sigh{/i} now she’s probably going to hate me more than she already does."
 
-    show dorothyPlaceholder at left 
+    show dorothyPlaceholder at right
     with dissolve
 
     dorothy "What do you mean?"
@@ -193,7 +200,7 @@ label chapter04AAA:
 
     dorothy "Obviously."
 
-    show scarecrowPlaceholder at center 
+    show ScarecrowPlaceholder at center 
     with dissolve
 
     scarecrow "How many love letters have you even sent, it’s been like, a day."
@@ -217,8 +224,8 @@ label chapter04AAA:
 
     "Tin Man walks away into another room where the W.W. West is."
 
-    hide scarecrowPlaceholder 
-    show scarecrowPlaceholder at right 
+    hide ScarecrowPlaceholder 
+    show ScarecrowPlaceholder at left
     with dissolve
 
     dorothy "Scarecrow you’re a genius! Now we can look around while she’s distracted."
@@ -231,7 +238,7 @@ label chapter04AAA:
 
     dorothy "What?"
 
-    hide scarecrowPlaceholder 
+    hide ScarecrowPlaceholder 
     with dissolve
 
     "Scarecrow darts upstairs."
@@ -249,7 +256,7 @@ label chapter04AAB:
     "Dorothy sneaks over to eavesdrop on Tin Man and W. W. West's conversation."
 
     show tinmanPlaceholder at center 
-    show wwwestPlaceholder at right 
+    show wwWestPlaceholder at right 
     with dissolve 
 
     $ hasListenedInOnWitchCh4 = True
@@ -271,7 +278,7 @@ label chapter04AAB:
 label chapter04AAC:
 
     hide tinmanPlaceholder 
-    show scarecrowPlaceholder at center
+    show ScarecrowPlaceholder at center
     with dissolve
 
     scarecrow "{i}Heard from the second story{/i} {b}FOUND IT!{/b}"
@@ -297,12 +304,12 @@ label chapter04AAC:
         zoom 1.5
     with fade
 
-    show dorothyPlaceholder at left
+    show dorothyPlaceholder at right
     with dissolve
 
     dorothy "{i}Out of breath{/i} Why the heck dd you have to shout that you found it?"
 
-    show scarecrowPlaceholder at right 
+    show ScarecrowPlaceholder at left
     with dissolve 
 
     scarecrow "Sorry, I was just really excited."
@@ -358,8 +365,11 @@ label chapter04B:
 
     "Footsteps are heard from within the mansion, and then the door creaks open."
 
-    hide scarecrowPlaceholder 
-    show wwwestPlaceholder at right 
+    hide ScarecrowPlaceholder
+    hide dorothyPlaceholder
+    show dorothyPlaceholder at center
+
+    show wwWestAngry at right 
     with dissolve 
 
     wwwest "Hello!? What the hell are you people doing on my lawn!? What are you yelling about!? Get out of here before I call the cops!"

@@ -67,7 +67,7 @@ label chapter02A:
     show ScarecrowPlaceholder at center
     with dissolve
 
-    scarecrow "{i}whispers urgently{/i} Quick! Now’s our chance to take back your camera!"
+    scarecrow "{i}whispers urgently{/i} Quick! Now’s our chance to take the camera!"
 
     hide ScarecrowPlaceholder
     show dorothyPlaceholder at center
@@ -101,60 +101,60 @@ label chapter02B:
     wiz "YOU CAN REMAIN SILENT ALL YOU WANT, BUT THE EARLIER YOU SPEAK UP, THE EASIER IT WILL BE FOR YOU."
 
     show wizPlaceholder at left
-    show wwWestPlaceholder at right
+    show wwWestAngry at right
     with dissolve
 
     WWWest "..."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
     wiz "{i}shows a picture of something you can't see from here{/i} I SEE THAT YOU TOOK A LIKING TO THESE."
 
     show wizPlaceholder at left
-    show wwWestPlaceholder at right
+    show wwWestAngry at right
     with dissolve
 
     WWWest "..."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
     wiz "WHY DID YOU WANT THEM? WHY DID YOU NEED THEM SO MUCH, THAT YOU HAD TO KILL YOUR OWN SISTER FOR THEM?"
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     WWWest "{i}glares{/i} I didn't kill my sister."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
     wiz "OKAY. LET’S SAY YOU DIDN’T. WHAT WAS THE SIGNIFICANCE OF THEM?"
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     WWWest "You wouldn’t understand, even if I explained it."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
     wiz "THAT’S IRRELEVANT TO ME. I JUST WANT TO KNOW {b}WHY{/b} THOSE WERE SO IMPORTANT TO YOU."
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     WWWest "They weren’t."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
@@ -163,36 +163,36 @@ label chapter02B:
     wiz "DOES THIS LOOK FAMILIAR TO YOU? {i}gestures towards the camera{/i}"
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     WWWest "{i}confused{/i} No, I have never seen this camera before."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
     wiz "UPON FURTHER INSPECTION, THE INDENTS ON THE CAMERA LINE UP PERFECTLY WITH MANY OF THE VICTIM’S INJURIES. WE HAVE DEDUCED THAT THE CAMERA WAS, IN FACT, THE MURDER WEAPON."
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     WWWest "Interesting."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
     wiz "HOW INTERESTING, TO USE A CAMERA AS A WEAPON. I’LL ASK YOU ONE MORE TIME. DO YOU RECOGNIZE THIS CAMERA?"
 
     hide wizPlaceholder
-    show wwWestPlaceholder at center
+    show wwWestAngry at center
     with dissolve
 
     WWWest "I’ll repeat myself: I’ve never seen that camera before."
 
-    hide wwWestPlaceholder
+    hide wwWestAngry
     show wizPlaceholder at center
     with dissolve
 
