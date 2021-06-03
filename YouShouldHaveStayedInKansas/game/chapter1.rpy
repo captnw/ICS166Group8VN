@@ -85,8 +85,6 @@ label chp01Choice01Cont:
 
     investigator "What do you normally like to eat?! Who can testify for you?! How many fingers do I have behind my back?!"
 
-    stop music fadeout 2.0
-
     "As this goes on, you no longer feel unease. In fact you feel very confused about what was going on. But before you can even get a word out “The Wiz” decides to pop in."
 
     hide ScarecrowPlaceholder
@@ -120,6 +118,8 @@ menu chapter01Choice02:
         jump chp01Choice02Cont
 
 label chp01Choice02Cont:
+
+    stop music fadeout 5.0
 
     hide dorothyPlaceholder
     show wizPlaceholder
