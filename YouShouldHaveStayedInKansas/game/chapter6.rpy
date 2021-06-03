@@ -6,6 +6,9 @@ label chapter06:
         zoom 1.5
     show dorothyPlaceholder at center
 
+    play music "audio/despair syndrome quiet.mp3" loop volume 0.3 fadein 3.0
+    play sound "audio/door knock.mp3"
+
     "It’s morning and you find yourself being woken up by loud banging on your door. You go to check it out and find two police men waiting by the door."
 
     show policeman1Placeholder at left with dissolve
@@ -97,12 +100,16 @@ menu chapter06Choice1:
         jump chapter06Result1_3
 
 label chapter06Result1_1:
+
+    stop music fadeout 1.0
+
     wiz "WHAT DO YOU MEAN?"
 
     dorothy "You’re the murderer."
 
     wiz "THAT’S A BOLD ACCUSATION, BUT I’LL HUMOUR YOU, I’LL ANSWER YOUR DUMB QUESTIONS."
 
+    play music "audio/triumph.mp3" loop volume 0.3
     dorothy "\"Bottom of heirloom hold down\""
 
     wiz "I DON’T KNOW HOW YOU’VE OBTAINED THAT, BUT THAT’S MY NOTE FROM MY PRIVATE OFFICE. THAT’S NOT REALLY ENOUGH TO EVEN IMPLICATE ME."
@@ -163,6 +170,7 @@ label chapter06Result1_1:
 
     dorothy "Don't even compare yourself to me."
 
+    stop music fadeout 3.0
     wiz "alright, at the end of the day there is still money involved."
 
     wiz "I’ll let you take half of the value of the jewelry once it’s sold, and I’ll leave you and all of your friends alone."
@@ -203,6 +211,8 @@ label chapter06Choice1_1_1:
 
     scene black with fade
 
+    play music "audio/despair syndrome quiet.mp3" loop volume 0.3
+
     "Couple days later you hear the witch goes to jail, but that there was an accomplice with her and that the police are still tracking them down."
 
     "You find that very weird, but decide not to worry about it and just think about what you will do with the money you will get."
@@ -241,6 +251,7 @@ label chapter06Choice1_1_1:
     jump end
 
 label chapter06Choice1_1_2:
+    # Music?
     dorothy "No"
 
     wiz "what!!?"
@@ -261,6 +272,7 @@ label chapter06Choice1_1_2:
 
     dorothy "You are just pathetic!! Acting like you are some grand person when in reality you are just a small old man!!"
 
+    play music "audio/despair syndrome quiet.mp3" loop volume 0.3
     wiz "SILENCE!!!"
 
     dorothy "{i}shocked{/i}"
@@ -277,8 +289,11 @@ label chapter06Choice1_1_2:
 
     wiz "NO ONE WILL QUESTION ME."
 
+    stop music fadeout 1.0
+
     "All you can do is watch in horror as the wizard says this because he was right. Who would believe you? You found out who it was, but in the end you are still going to be the one to take the blame."
 
+    play music "audio/triumph.mp3" loop volume 0.3
     "Just as you were panicking, the door creaks open and you see Scarecrow playfully swinging on the door. You can also see Tin Man just outside and a few others that you can’t quite make out."
 
     dorothy "Scarecrow?"
@@ -561,7 +576,9 @@ label chapter06Choice1_1_2:
 
     scarecrow "Was there ever a doubt?!"
 
+    stop music fadeout 2.0
     scene black with fade
+    play music "audio/sillytheme.mp3" volume 0.5
 
     "A few days later after the trial you see the newspaper flooding with the WIZARD's face and headlines saying \"Former Lead Investigator charged with murder sentencing him to life in jail\"."
 
