@@ -195,13 +195,14 @@ menu chapter06Choice1_1:
         jump chapter06Choice1_1_2
 
 label chapter06Choice1_1_1:
+    play music "audio/peacefulsong.mp3" fadein 1.0 loop
+
     dorothy "Alright"
 
     wiz "so what's it going to be?"
 
     dorothy "I will go along with your plan for the money"
 
-    # IS THIS CORRECT?
     if didYouGiveScarecrowTape:
         dorothy "But you have to give scarecrow a chance at the academy"
 
@@ -216,6 +217,8 @@ label chapter06Choice1_1_1:
     dorothy "Fine"
 
     wiz "{i}sinisterly{/i} GOOD"
+
+    stop music fadeout 1.0
 
     scene black with fade
 
