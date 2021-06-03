@@ -145,6 +145,9 @@ label chapter06Result1_1:
 
     "You glare at the Wizard, and the Wizard glances at you, and takes off his hat. You can now see that a shriveled, old man lies before you with fear in his eyes."
 
+    hide wizPlaceholder
+    show wizReveal at left
+
     wiz "you can’t tell anyone about this."
 
     dorothy "Why not? You already killed a person, ruined her sister’s life, what’s to stop you from ruining one more? You crazy old man."
@@ -168,6 +171,11 @@ label chapter06Result1_1:
     wiz "I’ll let you take half of the value of the jewelry once it’s sold, and I’ll leave you and all of your friends alone."
 
     dorothy "... in return for what?"
+
+    "The Wizard puts his disquise back on."
+
+    hide wizReveal
+    show wizPlaceholder
 
     wiz "I want the Wicked Witch of the West to go to jail, so neither of us would have to go. Then I’ll leave town, wire you the money, and then we’ll both never speak of this incident ever again."
 
@@ -549,9 +557,12 @@ label chapter06Choice1_1_2:
 
     "As the lead investigator's hat is blown away by a gust of wind, the wizard is revealed to be a small, insignificant, little man."
 
+    hide wizPlaceholder
+    show wizReveal
+
     "He looks around frantically as he is escorted away by the police officers."
 
-    hide wizPlaceholder
+    hide wizReveal
     show dorothyPlaceholder at center
 
     dorothy "Wow Scarecrow. You really are amazing."

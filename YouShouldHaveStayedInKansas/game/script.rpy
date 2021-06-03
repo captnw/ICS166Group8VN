@@ -28,6 +28,7 @@ image tinmanPlaceholder = "characterSprites/TinmanSprite.png"
 
 image wizPlaceholder = "characterSprites/wizardSprite.png"
 image wizDramatic = "characterSprites/wizardSpritedramatic.png"
+image wizReveal = "characterSprites/wizardSpritereveal.png"
 
 image wwWestPlaceholder = "characterSprites/witchSprite.png"
 image wwWestAngry = "characterSprites/witchSpriteangry.png"
