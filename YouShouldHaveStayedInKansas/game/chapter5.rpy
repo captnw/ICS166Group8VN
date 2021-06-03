@@ -7,6 +7,8 @@ label chapter05:
 
     "CHAPTER 5: Scarecrow's Apartment - night"
 
+    play music "audio/forest.mp3" loop fadein 2.0 volume 0.5
+
     "Papers and Newspaper clippings are scattered everywhere. There is stuff written on the walls, connected together with string."
 
     "On the bookshelf is an assortment of books and jars full of...something. Food? Experiments? Food that became an experiment after it spoiled? Who knows."
@@ -385,6 +387,7 @@ label CH5moveON:
         show ScarecrowSad at center
         with dissolve
 
+        stop music fadeout 1.0
         scarecrow "Hey, listen…I know it seems pointless, you know?"
 
         hide ScarecrowSad
@@ -469,6 +472,7 @@ label CH5moveON:
         show ScarecrowPlaceholder at center
         with dissolve
 
+        stop music fadeout 1.0
         scarecrow "I’M NOT A REAL DETECTIVE!"
 
         scarecrow "Few, that felt good to get off my chest."
@@ -478,6 +482,8 @@ label CH5moveON:
 
         scarecrow "I wanted to be! But I used to think I couldn’t figure out anything. I was...kind of the idiot, you know?"
     
+    play music "audio/peacefulsong.mp3" loop fadein 2.0 volume 0.5
+
     scarecrow "In school, and after, I...wasn’t really good at a lot of things."
     scarecrow "Every chance I got, he rejected me from the academy because I always got in the way with my silly ideas."
     scarecrow "Scarecrow the brainless, that’s what they all called me."
@@ -622,8 +628,12 @@ label CH5comfort:
 
 label CH5bridgescene:
 
+    stop music fadeout 1.0
+
     scene londonBridge
     with dissolve
+
+    play music "audio/despair syndrome quiet.mp3" loop volume 0.3
 
     "You stand outside at nighttime. You're crossing the London Bridge when you see a tall, dark figure in your path. The fog is too thick for you to see clearly."
 
@@ -708,8 +718,12 @@ label CH5bridgescenecontinued:
 
     dorothy "{i}muttering{\i} 'Be safe, Dorothy', what a dumb thing to promise."
 
+    stop music fadeout 1.0
+
     scene scarecrowApartment
     with dissolve
+
+    play music "audio/forest.mp3" fadein 2.0
 
     "Back at Scarecrow’s place, the wannabe detective is cooking up some polaroids." 
 
@@ -766,6 +780,8 @@ label CH5bridgescenecontinued:
         with dissolve
 
         dorothy "If I can just figure out who wrote that note, then surely..."
+
+    stop music fadeout 2.0
 
     scene black
     with dissolve
