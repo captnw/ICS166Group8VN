@@ -745,6 +745,8 @@ label CH5bridgescenecontinued:
         show ScarecrowPlaceholder at right
         with dissolve
 
+        play sound "audio/telephone ring.mp3" volume 0.3
+
         "Scarecrow picks up his phone and dials Dorothy's number."
 
         scarecrow "Dorothy! I have some new important evidence!"
